@@ -1,0 +1,23 @@
+{
+  "defaultRoles": [
+    "Senior Recruiter",
+    "Recruitment Consultant",
+    "Talent Acquisition Partner",
+    "Corporate Recruiter",
+    "Internal Recruiter",
+    "Talent Partner"
+  ],
+  "defaultSeeds": [
+    "Loods5",
+    "Marcel's Green Soap",
+    "Gemeente Haarlem",
+    "Dopper"
+  ],
+  "defaultLocation": "Haarlem, Netherlands (30 km radius)",
+  "defaultSize": "50+",
+  "defaultSectors": "Consumer brands, FMCG, Media, Tech, Municipality",
+  "apiModel": "gpt-5.4-nano",
+  "apiMaxTokens": 3000,
+  "apiTemperature": 0.2,
+  "companyCountTarget": "12-16"
+}

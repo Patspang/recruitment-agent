@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0;url=/index.html">
+<title>Job Scout Haarlem — Redirecting</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F5F2EC;
+    --surface: #FDFCF9;
+    --ink: #1A1915;
+    --ink-2: #6B6860;
+    --ink-3: #A8A69F;
+    --accent: #2D6A4F;
+    --accent-light: #E8F4EE;
+    --accent-mid: #52B788;
+    --warn: #D4622A;
+    --warn-light: #FDF0E8;
+    --border: rgba(26,25,21,0.10);
+    --border-strong: rgba(26,25,21,0.18);
+    --radius: 10px;
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .header {
+    padding: 28px 28px 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+  .header-title { font-family: var(--font-display); font-size: 26px; color: var(--ink); line-height: 1.1; }
+  .header-title em { color: var(--accent); font-style: italic; }
+  .header-sub { margin-top: 4px; font-size: 13px; color: var(--ink-2); font-weight: 300; }
+  .status-pill {
+    display: flex; align-items: center; gap: 6px;
+    padding: 5px 11px; border-radius: 20px;
+    font-size: 12px; font-weight: 500; white-space: nowrap;
+    background: var(--accent-light); color: var(--accent);
+    border: 1px solid rgba(45,106,79,0.2);
+  }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-mid); }
+  .status-dot.active { animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.85)} }
+
+  .main { display: grid; grid-template-columns: 300px 1fr; gap: 0; min-height: calc(100vh - 110px); }
+
+  .sidebar {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 20px;
+    overflow-y: auto;
+  }
+  .section-label {
+    font-size: 10px; font-weight: 500; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--ink-3);
+    margin-bottom: 10px; margin-top: 20px;
+  }
+  .section-label:first-child { margin-top: 0; }
+
+  .tags-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+  .tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 4px 10px; border-radius: 20px;
+    font-size: 12px; font-weight: 400;
+    background: var(--accent-light); color: var(--accent);
+    border: 1px solid rgba(45,106,79,0.2);
+    cursor: default;
+  }
+  .tag-remove {
+    cursor: pointer; font-size: 14px; line-height: 1;
+    color: var(--accent); opacity: .6;
+    background: none; border: none; padding: 0; font-family: inherit;
+  }
+  .tag-remove:hover { opacity: 1; }
+  .tag-add-row { display: flex; gap: 6px; margin-top: 8px; }
+  .tag-input {
+    flex: 1; padding: 6px 10px; border: 1px solid var(--border-strong);
+    border-radius: var(--radius); font-family: var(--font-body);
+    font-size: 13px; background: var(--bg); color: var(--ink);
+    outline: none;
+  }
+  .tag-input:focus { border-color: var(--accent); }
+  .btn-add {
+    padding: 6px 12px; background: var(--accent); color: #fff;
+    border: none; border-radius: var(--radius); font-size: 13px;
+    cursor: pointer; font-family: var(--font-body); font-weight: 500;
+  }
+  .btn-add:hover { background: #235c41; }
+
+  .seed-list { display: flex; flex-direction: column; gap: 6px; }
+  .seed-item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 7px 10px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    font-size: 13px;
+  }
+  .seed-remove { background: none; border: none; cursor: pointer; color: var(--ink-3); font-size: 16px; line-height: 1; }
+  .seed-remove:hover { color: var(--warn); }
+  .seed-add-row { display: flex; gap: 6px; margin-top: 8px; }
+
+  .config-row { margin-bottom: 12px; }
+  .config-label { font-size: 12px; color: var(--ink-2); margin-bottom: 4px; display: block; }
+  .config-input, .config-select {
+    width: 100%; padding: 7px 10px; border: 1px solid var(--border-strong);
+    border-radius: var(--radius); font-family: var(--font-body);
+    font-size: 13px; background: var(--bg); color: var(--ink); outline: none;
+  }
+  .config-input:focus, .config-select:focus { border-color: var(--accent); }
+
+  .btn-run {
+    width: 100%; padding: 11px; background: var(--ink);
+    color: #fff; border: none; border-radius: var(--radius);
+    font-family: var(--font-display); font-size: 16px;
+    cursor: pointer; margin-top: 18px; transition: background .15s;
+    letter-spacing: .01em;
+  }
+  .btn-run:hover { background: var(--accent); }
+  .btn-run:disabled { background: var(--ink-3); cursor: not-allowed; }
+
+  .content { padding: 24px; overflow-y: auto; background: var(--bg); }
+
+  .empty-state {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; min-height: 320px;
+    text-align: center; color: var(--ink-3);
+  }
+  .empty-icon { font-size: 40px; margin-bottom: 12px; opacity: .4; }
+  .empty-title { font-family: var(--font-display); font-size: 20px; color: var(--ink-2); margin-bottom: 6px; }
+  .empty-desc { font-size: 13px; max-width: 280px; line-height: 1.6; }
+
+  .log-stream {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px; margin-bottom: 20px;
+    font-size: 12px; font-family: 'Courier New', monospace;
+    color: var(--ink-2); max-height: 160px; overflow-y: auto;
+    display: none;
+  }
+  .log-stream.visible { display: block; }
+  .log-line { margin-bottom: 3px; }
+  .log-line.ok { color: var(--accent); }
+  .log-line.err { color: var(--warn); }
+  .log-line.info { color: var(--ink-3); }
+
+  .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .company-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px;
+    transition: border-color .15s, box-shadow .15s;
+    cursor: default;
+  }
+  .company-card:hover { border-color: var(--border-strong); box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  .company-card.has-roles { border-left: 3px solid var(--accent-mid); }
+  .company-card.no-roles { border-left: 3px solid var(--border-strong); }
+
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+  .card-name { font-family: var(--font-display); font-size: 16px; line-height: 1.2; }
+  .card-location { font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+  .card-badge {
+    padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 500;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .badge-roles { background: var(--accent-light); color: var(--accent); }
+  .badge-none { background: #f0eeea; color: var(--ink-3); }
+
+  .card-desc { font-size: 12px; color: var(--ink-2); margin-bottom: 10px; line-height: 1.5; }
+
+  .card-careers-link {
+    display: block; margin-top: 10px; font-size: 12px;
+    color: var(--ink-3); text-decoration: none;
+    padding-top: 8px; border-top: 1px solid var(--border);
+  }
+  .card-careers-link:hover { color: var(--accent); }
+
+  .phase-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px;
+  }
+  .phase-title { font-family: var(--font-display); font-size: 18px; }
+  .phase-count { font-size: 13px; color: var(--ink-3); font-style: italic; }
+
+  .thinking { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); margin-bottom: 14px; }
+  .thinking-dots span {
+    display: inline-block; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--accent); margin: 0 1px;
+    animation: bounce 1.2s ease-in-out infinite;
+  }
+  .thinking-dots span:nth-child(2) { animation-delay: .2s; }
+  .thinking-dots span:nth-child(3) { animation-delay: .4s; }
+  @keyframes bounce { 0%,80%,100%{transform:translateY(0)} 40%{transform:translateY(-5px)} }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div>
+      <div class="header-title">Job Scout <em>Haarlem</em></div>
+      <div class="header-sub">In-house recruitment roles · greater Haarlem area</div>
+    </div>
+    <div class="status-pill" id="status-pill">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="status-text">Ready</span>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+
+    <div class="section-label">Target role titles</div>
+    <div class="tags-wrap" id="roles-wrap"></div>
+    <div class="tag-add-row">
+      <input class="tag-input" id="role-input" placeholder="e.g. Talent Partner" />
+      <button class="btn-add" onclick="addRole()">Add</button>
+    </div>
+
+    <div class="section-label">Seed companies</div>
+    <div class="seed-list" id="seed-list"></div>
+    <div class="seed-add-row">
+      <input class="tag-input" id="seed-input" placeholder="e.g. Dopper" style="flex:1"/>
+      <button class="btn-add" onclick="addSeed()">Add</button>
+    </div>
+
+    <div class="section-label">Search settings</div>
+    <div class="config-row">
+      <label class="config-label">Location focus</label>
+      <input class="config-input" id="cfg-location" value="Haarlem, Netherlands (30 km radius)" />
+    </div>
+    <div class="config-row">
+      <label class="config-label">Min. company size</label>
+      <select class="config-select" id="cfg-size">
+        <option value="any">Any size</option>
+        <option value="50+" selected>50+ employees</option>
+        <option value="100+">100+ employees</option>
+        <option value="250+">250+ employees</option>
+      </select>
+    </div>
+    <div class="config-row">
+      <label class="config-label">Sectors to target</label>
+      <input class="config-input" id="cfg-sectors" value="Consumer brands, FMCG, Media, Tech, Municipality" />
+    </div>
+
+    <button class="btn-run" id="btn-run" onclick="runAgent()">Discover companies →</button>
+  </div>
+
+  <div class="content" id="content">
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">🔍</div>
+      <div class="empty-title">Ready to scout</div>
+      <div class="empty-desc">Configure your role titles and search settings, then hit <strong>Discover companies</strong> to start.</div>
+    </div>
+    <div id="results-area" style="display:none">
+      <div class="log-stream" id="log-stream"></div>
+      <div id="cards-container"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const state = {
+  roles: ['Senior Recruiter', 'Recruitment Consultant', 'Talent Acquisition Partner', 'Corporate Recruiter', 'Internal Recruiter', 'Talent Partner'],
+  seeds: ['Loods5', "Marcel's Green Soap", 'Gemeente Haarlem', 'Dopper'],
+  running: false
+};
+
+function init() {
+  renderRoles();
+  renderSeeds();
+  document.getElementById('role-input').addEventListener('keydown', e => { if(e.key==='Enter') addRole(); });
+  document.getElementById('seed-input').addEventListener('keydown', e => { if(e.key==='Enter') addSeed(); });
+}
+
+function renderRoles() {
+  const wrap = document.getElementById('roles-wrap');
+  wrap.innerHTML = state.roles.map((r,i) => `
+    <span class="tag">${r}
+      <button class="tag-remove" onclick="removeRole(${i})">×</button>
+    </span>`).join('');
+}
+
+function renderSeeds() {
+  const list = document.getElementById('seed-list');
+  list.innerHTML = state.seeds.map((s,i) => `
+    <div class="seed-item">
+      <span>${s}</span>
+      <button class="seed-remove" onclick="removeSeed(${i})">×</button>
+    </div>`).join('');
+}
+
+function addRole() {
+  const inp = document.getElementById('role-input');
+  const val = inp.value.trim();
+  if (val && !state.roles.includes(val)) { state.roles.push(val); renderRoles(); }
+  inp.value = '';
+}
+function removeRole(i) { state.roles.splice(i,1); renderRoles(); }
+function addSeed() {
+  const inp = document.getElementById('seed-input');
+  const val = inp.value.trim();
+  if (val && !state.seeds.includes(val)) { state.seeds.push(val); renderSeeds(); }
+  inp.value = '';
+}
+function removeSeed(i) { state.seeds.splice(i,1); renderSeeds(); }
+
+function log(msg, type='info') {
+  const el = document.getElementById('log-stream');
+  el.classList.add('visible');
+  const line = document.createElement('div');
+  line.className = `log-line ${type}`;
+  const ts = new Date().toLocaleTimeString('nl-NL', {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  line.textContent = `[${ts}] ${msg}`;
+  el.appendChild(line);
+  el.scrollTop = el.scrollHeight;
+}
+
+function setStatus(text, active=false) {
+  document.getElementById('status-text').textContent = text;
+  document.getElementById('status-dot').classList.toggle('active', active);
+}
+
+async function runAgent() {
+  if (state.running) return;
+  state.running = true;
+  document.getElementById('btn-run').disabled = true;
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('results-area').style.display = 'block';
+  document.getElementById('cards-container').innerHTML = '';
+  document.getElementById('log-stream').innerHTML = '';
+  setStatus('Searching…', true);
+
+  const location = document.getElementById('cfg-location').value;
+  const sectors = document.getElementById('cfg-sectors').value;
+  const size = document.getElementById('cfg-size').value;
+  const roles = state.roles;
+  const seeds = state.seeds;
+
+  log('Starting company discovery agent…');
+  log(`Location: ${location}`);
+  log(`Role titles: ${roles.slice(0,3).join(', ')}…`);
+  log(`Seed companies: ${seeds.join(', ')}`);
+
+  document.getElementById('cards-container').innerHTML = `
+    <div class="thinking">
+      <div class="thinking-dots"><span></span><span></span><span></span></div>
+      <span>Asking OpenAI to discover companies…</span>
+    </div>`;
+
+  try {
+    const prompt = `You are a job search research assistant helping a Senior Recruitment Consultant named Daniëlle find in-house recruitment roles near Haarlem, Netherlands.
+
+Her background: Senior Recruitment Consultant specialising in Digital Marketing & Communication at We Know People, based in Haarlem. University of Amsterdam graduate. ~10 years experience in recruitment.
+
+Task: Identify companies that likely have or would have in-house recruitment/talent acquisition roles near Haarlem (within ~30km, covering Amsterdam, Hoofddorp, Amstelveen, Zaandam, IJmuiden area).
+
+Settings:
+- Location focus: ${location}
+- Minimum company size: ${size}
+- Target sectors: ${sectors}
+- Seed companies to include: ${seeds.join(', ')}
+- Target role titles she is interested in: ${roles.join(', ')}
+
+Return a JSON array of 12-16 companies. For each company include:
+{
+  "name": "Company name",
+  "location": "City, NL",
+  "sector": "Sector",
+  "size": "Approximate headcount e.g. ~500",
+  "description": "1-2 sentence description of what they do and why they might have in-house recruitment",
+  "careers_url": "Best guess at careers page URL",
+  "likely_hiring": true or false (your assessment of whether they likely have relevant open roles now),
+  "reasoning": "Brief reason for likely_hiring assessment"
+}
+
+IMPORTANT: Include ALL the seed companies (${seeds.join(', ')}) in the list. Return ONLY valid JSON array, no markdown, no explanation.`;
+
+    log('Calling Claude API for company discovery…');
+
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+
+    const data = await res.json();
+    log(`API response received (${data.content?.length} blocks)`, 'ok');
+
+    let jsonStr = '';
+    for (const block of data.content || []) {
+      if (block.type === 'text' && block.text) {
+        jsonStr += block.text;
+      }
+    }
+
+    jsonStr = jsonStr.replace(/```json|```/g, '').trim();
+    const arrStart = jsonStr.indexOf('[');
+    const arrEnd = jsonStr.lastIndexOf(']');
+    if (arrStart === -1) throw new Error('No JSON array found in response');
+    jsonStr = jsonStr.slice(arrStart, arrEnd + 1);
+
+    const companies = JSON.parse(jsonStr);
+    log(`Found ${companies.length} companies`, 'ok');
+
+    renderCompanies(companies, roles);
+
+  } catch (err) {
+    log(`Error: ${err.message}`, 'err');
+    document.getElementById('cards-container').innerHTML = `
+      <div class="empty-state" style="min-height:200px">
+        <div class="empty-icon">⚠️</div>
+        <div class="empty-title">Something went wrong</div>
+        <div class="empty-desc">${err.message}</div>
+      </div>`;
+  }
+
+  setStatus('Done', false);
+  state.running = false;
+  document.getElementById('btn-run').disabled = false;
+  document.getElementById('btn-run').textContent = 'Run again →';
+}
+
+function renderCompanies(companies, roles) {
+  const container = document.getElementById('cards-container');
+  const likely = companies.filter(c => c.likely_hiring);
+  const others = companies.filter(c => !c.likely_hiring);
+
+  let html = '';
+
+  if (likely.length) {
+    html += `<div class="phase-header">
+      <span class="phase-title">Likely hiring now</span>
+      <span class="phase-count">${likely.length} companies</span>
+    </div>
+    <div class="cards-grid" style="margin-bottom:28px">`;
+    likely.forEach(c => { html += companyCard(c); });
+    html += '</div>';
+  }
+
+  if (others.length) {
+    html += `<div class="phase-header">
+      <span class="phase-title">Worth monitoring</span>
+      <span class="phase-count">${others.length} companies</span>
+    </div>
+    <div class="cards-grid">`;
+    others.forEach(c => { html += companyCard(c); });
+    html += '</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+function companyCard(c) {
+  const hasBadge = c.likely_hiring;
+  return `
+  <div class="company-card ${hasBadge ? 'has-roles' : 'no-roles'}">
+    <div class="card-header">
+      <div>
+        <div class="card-name">${c.name}</div>
+        <div class="card-location">📍 ${c.location} · ${c.size || '?'}</div>
+      </div>
+      <span class="card-badge ${hasBadge ? 'badge-roles' : 'badge-none'}">
+        ${hasBadge ? '✓ Likely hiring' : 'Monitor'}
+      </span>
+    </div>
+    <div class="card-desc">${c.description}</div>
+    <div style="font-size:11px;color:var(--ink-3);margin-bottom:8px;font-style:italic">${c.reasoning || ''}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+      <span style="font-size:11px;padding:2px 8px;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--ink-2)">${c.sector}</span>
+    </div>
+    ${c.careers_url ? `<a href="${c.careers_url}" class="card-careers-link" target="_blank">→ ${c.careers_url}</a>` : ''}
+  </div>`;
+}
+
+init();
+</script>
+</body>
+</html>

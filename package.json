@@ -1,0 +1,18 @@
+{
+  "name": "recruitment-agent",
+  "version": "2.0.0",
+  "description": "Job Scout Haarlem - AI-powered recruitment discovery tool",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 -d public",
+    "dev": "python -m http.server 8000 -d public"
+  },
+  "keywords": ["recruitment", "job-search", "ai", "claude"],
+  "author": "Daniëlle",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Patspang/recruitment-agent"
+  },
+  "devDependencies": {}
+}
