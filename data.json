@@ -3,14 +3,14 @@
     {
       "name": "Loods5",
       "location": "Haarlem, NL",
-      "sector": "Retail / Consumer goods",
-      "size": "~500",
-      "description": "Loods5 is a Dutch home & living retailer with a strong omnichannel presence. As a growing consumer brand with stores and logistics, they typically need ongoing in-house hiring for retail, corporate, and warehouse roles.",
-      "careers_url": "https://www.loods5.nl/vacatures",
+      "sector": "Retail / e-commerce (home & living)",
+      "size": "~500-1000",
+      "description": "Loods5 is a home and living retailer with an e-commerce presence. Retail and logistics organizations at this scale typically run structured recruitment and talent acquisition processes.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Retail and logistics hiring tends to be continuous; local brand presence in Haarlem suggests active recruitment.",
+      "reasoning": "Large retail/e-commerce employer with frequent hiring across warehouse, customer, and corporate roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Loods5",
         "careers_url": "https://www.loods5.nl/vacatures",
@@ -19,7 +19,8 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.loods5.nl"
     },
     {
       "name": "Marcel's Green Soap",
@@ -45,14 +46,14 @@
     {
       "name": "Gemeente Haarlem",
       "location": "Haarlem, NL",
-      "sector": "Municipality / Public sector",
-      "size": "~1,000",
-      "description": "The municipality of Haarlem employs a wide range of public-sector professionals across services, policy, and operations. Municipalities typically run structured in-house recruitment and talent acquisition processes.",
-      "careers_url": "https://werkenbij.haarlem.nl",
+      "sector": "Municipality / public sector",
+      "size": "~1000-2000",
+      "description": "The municipality of Haarlem employs a wide range of public-sector staff across policy, operations, and services. Municipalities commonly have internal HR and recruitment functions, including corporate recruiters and talent acquisition roles.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Public-sector recruitment is ongoing and often includes corporate recruiter/talent partner roles.",
+      "reasoning": "Public-sector employer with recurring recruitment needs and in-house HR/recruitment capacity.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Gemeente Haarlem",
         "careers_url": "https://werkenbij.haarlem.nl",
@@ -61,19 +62,20 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.haarlem.nl"
     },
     {
       "name": "Dopper",
       "location": "Amsterdam, NL",
-      "sector": "Consumer goods / Sustainability",
+      "sector": "Consumer brands (sustainable lifestyle)",
       "size": "~200",
-      "description": "Dopper designs and sells reusable water bottles and related products with a sustainability focus. As a consumer brand scaling internationally, they typically require internal recruiters for corporate and commercial roles.",
-      "careers_url": "https://www.dopper.com/nl-nl/pages/careers",
+      "description": "Dopper designs and sells reusable water bottles and related products. As a consumer brand with growth and hiring needs across commercial, operations, and corporate functions, they typically maintain in-house recruitment support.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Brand growth and international expansion commonly drive recurring hiring.",
+      "reasoning": "Consumer brand with ongoing corporate and operational hiring; in-house talent acquisition is likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Dopper",
         "careers_url": "https://www.dopper.com/nl-nl/pages/careers",
@@ -82,7 +84,8 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.dopper.com"
     },
     {
       "name": "Lidl Nederland",
@@ -171,14 +174,14 @@
     {
       "name": "Booking.com",
       "location": "Amsterdam, NL",
-      "sector": "Tech / Travel platform",
-      "size": "~10,000",
-      "description": "Booking.com is a global travel platform with a large engineering and corporate workforce. Tech companies at this scale typically have dedicated internal talent acquisition teams.",
-      "careers_url": "https://careers.booking.com",
+      "sector": "Tech / travel platform",
+      "size": "~10000+",
+      "description": "Booking.com is a global travel platform and technology company. Tech companies at this scale commonly have internal recruiters and talent acquisition teams for engineering, product, and corporate roles.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Large tech employer with continuous hiring across functions and geographies.",
+      "reasoning": "Large tech employer with ongoing hiring and dedicated internal recruitment.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Booking.com",
         "careers_url": "https://careers.booking.com",
@@ -187,19 +190,20 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.booking.com"
     },
     {
       "name": "TomTom",
       "location": "Amsterdam, NL",
-      "sector": "Tech / Navigation & location services",
-      "size": "~3,000",
-      "description": "TomTom develops mapping, navigation, and location-based technologies. Such companies typically maintain in-house recruitment teams for engineering, product, and corporate roles.",
-      "careers_url": "https://www.tomtom.com/careers/",
+      "sector": "Tech (location & mapping)",
+      "size": "~1000-2000",
+      "description": "TomTom develops location and mapping technologies. Such companies typically run in-house talent acquisition for technical and corporate roles.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Ongoing hiring cycles for tech and corporate functions are common.",
+      "reasoning": "Tech employer with structured TA and likely recruiter/talent partner roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "TomTom",
         "careers_url": "https://www.tomtom.com/careers/",
@@ -208,19 +212,20 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.tomtom.com"
     },
     {
       "name": "ING",
       "location": "Amsterdam, NL",
-      "sector": "Banking / Financial services",
-      "size": "~40,000",
-      "description": "ING is a major Dutch and international bank with large corporate and technology hiring needs. Large financial institutions typically have internal talent acquisition and recruiter roles.",
-      "careers_url": "https://www.ing.jobs",
+      "sector": "Banking / financial services",
+      "size": "~50000+",
+      "description": "ING is a large financial institution with extensive corporate and technology hiring needs. Banks typically maintain dedicated in-house talent acquisition teams for recruiters and talent partners.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "High-volume, structured recruitment processes make relevant roles likely.",
+      "reasoning": "Large employer with frequent openings and established internal TA/recruiter roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "ING",
         "careers_url": "https://www.ing.jobs",
@@ -229,19 +234,20 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.ing.com"
     },
     {
       "name": "Heineken",
       "location": "Amsterdam, NL",
-      "sector": "FMCG / Beverage",
-      "size": "~80000",
-      "description": "Heineken is a global beverage company with significant operations and corporate functions in the Netherlands. FMCG manufacturers typically maintain internal HR and recruitment capabilities for business-critical roles.",
-      "careers_url": "https://www.theheinekencompany.com/careers",
+      "sector": "FMCG (beverages)",
+      "size": "~5000+",
+      "description": "Heineken is a global brewer and FMCG beverage company. Large FMCG employers typically have in-house talent acquisition teams supporting corporate and operational hiring.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Global FMCG with ongoing hiring cycles and established talent acquisition.",
+      "reasoning": "Large FMCG employer with ongoing recruitment and internal TA capacity.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Heineken",
         "careers_url": "https://www.theheinekencompany.com/careers",
@@ -250,7 +256,8 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.theheinekencompany.com"
     },
     {
       "name": "MediaMarktSaturn",
@@ -318,14 +325,14 @@
     {
       "name": "Albert Heijn (Ahold Delhaize)",
       "location": "Zaandam, NL",
-      "sector": "FMCG / Retail",
-      "size": "~25,000",
-      "description": "Albert Heijn is a major Dutch grocery retailer within Ahold Delhaize. Their scale and constant operational needs make in-house recruitment/talent acquisition highly likely.",
-      "careers_url": "https://werkenbij.ah.nl",
+      "sector": "Retail / FMCG",
+      "size": "~50000+",
+      "description": "Albert Heijn is a major Dutch grocery retailer within Ahold Delhaize. Retail at this scale requires continuous hiring across stores, logistics, and corporate functions, typically supported by internal recruitment teams.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Ongoing hiring at scale across stores, logistics, and corporate roles.",
+      "reasoning": "High-volume employer with structured recruitment processes and likely internal recruiters.",
       "discoveredAt": "2026-04-20T19:54:25.604Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": {
         "company_name": "Albert Heijn (Ahold Delhaize)",
         "careers_url": "https://werkenbij.ah.nl",
@@ -334,7 +341,8 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.ah.nl"
     },
     {
       "name": "Adyen",
@@ -419,7 +427,105 @@
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
       }
+    },
+    {
+      "name": "Marcels Green Soap",
+      "location": "Haarlem, NL",
+      "sector": "Consumer brands (FMCG / personal care)",
+      "size": "~50-100",
+      "description": "Marcels Green Soap produces and sells natural soaps and personal care products. As an FMCG-style manufacturer/brand, they often recruit internally for roles in production, supply chain, and corporate support.",
+      "careers_url": null,
+      "website": "https://www.marcelsgreensoap.com",
+      "likely_hiring": true,
+      "reasoning": "Local FMCG brand with recurring hiring needs; internal recruiter/HR support is plausible.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "PWN",
+      "location": "Haarlem, NL",
+      "sector": "Utilities / water (public utility)",
+      "size": "~1000-2000",
+      "description": "PWN is a Dutch water company responsible for water production and related services. Utilities with technical and operational roles commonly maintain in-house recruitment and HR talent acquisition teams.",
+      "careers_url": null,
+      "website": "https://www.pwn.nl",
+      "likely_hiring": true,
+      "reasoning": "Large utility employer with ongoing recruitment for technical, operational, and corporate positions.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "Kennemerhart",
+      "location": "Heemstede, NL",
+      "sector": "Healthcare (care provider)",
+      "size": "~1000-2000",
+      "description": "Kennemerhart provides care and support services in the region. Healthcare organizations at this scale typically have dedicated HR and internal recruitment for clinical and support staff.",
+      "careers_url": null,
+      "website": "https://www.kennemerhart.nl",
+      "likely_hiring": true,
+      "reasoning": "Large regional care provider with continuous hiring needs and structured talent acquisition.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "Spaarne Gasthuis",
+      "location": "Hoofddorp, NL",
+      "sector": "Healthcare (hospital)",
+      "size": "~2000-3000",
+      "description": "Spaarne Gasthuis is a hospital providing medical care in the Haarlem/Hoofddorp area. Hospitals typically run in-house recruitment for a wide range of clinical and non-clinical roles.",
+      "careers_url": null,
+      "website": "https://www.spaarnegasthuis.nl",
+      "likely_hiring": true,
+      "reasoning": "Hospital scale and workforce needs make in-house recruitment highly likely.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "MSD (Merck Sharp & Dohme)",
+      "location": "Haarlem, NL",
+      "sector": "Pharmaceuticals / life sciences",
+      "size": "~500-1000",
+      "description": "MSD operates in the pharmaceutical and life sciences sector, including manufacturing and corporate functions. Large life sciences employers typically have dedicated internal talent acquisition and recruiter roles.",
+      "careers_url": null,
+      "website": "https://www.msd.nl",
+      "likely_hiring": true,
+      "reasoning": "Global pharma employer with structured TA processes and frequent openings.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "Teva Nederland B.V.",
+      "location": "Haarlem, NL",
+      "sector": "Pharmaceuticals / generics",
+      "size": "~500-1000",
+      "description": "Teva Nederland is active in pharmaceuticals and generics, with operations that require technical, quality, and corporate staffing. Such organizations usually employ in-house recruiters and HR talent acquisition teams.",
+      "careers_url": null,
+      "website": "https://www.tevaproducts.nl",
+      "likely_hiring": true,
+      "reasoning": "Pharma operations typically require ongoing hiring and internal recruitment support.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
+    },
+    {
+      "name": "Intos",
+      "location": "Amsterdam, NL",
+      "sector": "Tech / IT services (recruitment-adjacent staffing and solutions)",
+      "size": "~50-200",
+      "description": "Intos provides technology and IT services and often works with clients on digital projects. Tech services firms commonly use internal recruiters for project-based hiring and talent matching.",
+      "careers_url": null,
+      "website": "https://www.intos.nl",
+      "likely_hiring": true,
+      "reasoning": "Tech services company likely to recruit internally for consultants and project roles.",
+      "discoveredAt": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "vacancies": null
     }
   ],
-  "lastUpdated": "2026-04-20T19:55:24.156Z"
+  "lastUpdated": "2026-04-20T20:11:27.747Z"
 }
