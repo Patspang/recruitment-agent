@@ -1,40 +1,176 @@
 /**
- * Persistent company cache management
+ * Persistent company cache management using GitHub as database
  */
 class CompanyStorage {
   constructor() {
-    this.storageKey = 'recruitmentAgentCompanies';
+    this.sha = null;
+    this.cache = null;
+    this.isLoading = false;
+    this.isWriting = false;
+  }
+
+  /**
+   * Get GitHub API configuration
+   */
+  getConfig() {
+    if (!config || !config.defaults) {
+      throw new Error('Configuration not initialized. Please configure GitHub token first.');
+    }
+    return {
+      repo: config.getGithubRepo(),
+      branch: config.getGithubBranch(),
+      token: config.getGithubToken()
+    };
+  }
+
+  /**
+   * Validate GitHub configuration
+   */
+  validateConfig() {
+    const { repo, branch, token } = this.getConfig();
+    if (!repo) throw new Error('GitHub repository not configured');
+    if (!branch) throw new Error('GitHub branch not configured');
+    if (!token) throw new Error('GitHub token not configured');
+    return { repo, branch, token };
+  }
+
+  /**
+   * Read data from GitHub
+   */
+  async readFromGithub() {
+    const { repo, branch, token } = this.validateConfig();
+
+    const url = `https://api.github.com/repos/${repo}/contents/data.json?ref=${branch}`;
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    if (response.status === 404) {
+      // File doesn't exist, return empty data
+      this.sha = null;
+      return { companies: [], lastUpdated: null };
+    }
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(`GitHub API error: ${error.message}`);
+    }
+
+    const data = await response.json();
+    this.sha = data.sha;
+
+    const content = JSON.parse(atob(data.content));
+    return content;
+  }
+
+  /**
+   * Write data to GitHub
+   */
+  async writeToGithub(data, message = 'Update data') {
+    const { repo, branch, token } = this.validateConfig();
+
+    // Validate JSON
+    if (typeof data !== 'object' || data === null) {
+      throw new Error('Data must be a valid object');
+    }
+
+    const jsonString = JSON.stringify(data, null, 2);
+    const content = btoa(jsonString);
+
+    const body = {
+      message,
+      content,
+      branch
+    };
+
+    if (this.sha) {
+      body.sha = this.sha;
+    }
+
+    const url = `https://api.github.com/repos/${repo}/contents/data.json`;
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    });
+
+    if (!response.ok) {
+      const error = await response.json();
+      if (response.status === 409 || response.status === 422) {
+        // Conflict - try to refresh and retry once
+        console.warn('Conflict detected, refreshing data and retrying...');
+        await this.refreshData();
+        return this.writeToGithub(data, message + ' (retry)');
+      }
+      throw new Error(`GitHub API error: ${error.message}`);
+    }
+
+    const result = await response.json();
+    this.sha = result.content.sha;
+    return result;
+  }
+
+  /**
+   * Refresh data from GitHub
+   */
+  async refreshData() {
+    try {
+      this.cache = await this.readFromGithub();
+    } catch (error) {
+      console.error('Failed to refresh data from GitHub:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Ensure data is loaded
+   */
+  async ensureDataLoaded() {
+    if (this.cache === null && !this.isLoading) {
+      this.isLoading = true;
+      try {
+        await this.refreshData();
+      } finally {
+        this.isLoading = false;
+      }
+    }
+    return this.cache;
   }
 
   /**
    * Get all cached companies
    */
-  getAllCompanies() {
-    try {
-      const data = localStorage.getItem(this.storageKey);
-      if (!data) return [];
-      const parsed = JSON.parse(data);
-      return parsed.companies || [];
-    } catch (error) {
-      console.warn('Failed to load companies from storage:', error);
-      return [];
-    }
+  async getAllCompanies() {
+    const data = await this.ensureDataLoaded();
+    return data.companies || [];
   }
 
   /**
-   * Save companies to localStorage
+   * Save companies to GitHub
    */
-  saveCompanies(companies) {
+  async saveCompanies(companies) {
+    if (this.isWriting) {
+      throw new Error('Write operation already in progress');
+    }
+
+    this.isWriting = true;
     try {
-      const data = {
-        companies: companies || [],
-        lastUpdated: new Date().toISOString()
-      };
-      localStorage.setItem(this.storageKey, JSON.stringify(data));
+      const data = await this.ensureDataLoaded();
+      data.companies = companies || [];
+      data.lastUpdated = new Date().toISOString();
+
+      await this.writeToGithub(data, 'Update companies');
+      this.cache = data;
       return true;
-    } catch (error) {
-      console.error('Failed to save companies to storage:', error);
-      throw error;
+    } finally {
+      this.isWriting = false;
     }
   }
 
@@ -44,8 +180,8 @@ class CompanyStorage {
    * - Add new ones
    * - Update vacancy info if it exists
    */
-  mergeDiscovery(newCompanies) {
-    const existing = this.getAllCompanies();
+  async mergeDiscovery(newCompanies) {
+    const existing = await this.getAllCompanies();
     
     // Create map of existing companies by name
     const existingMap = new Map(existing.map(c => [c.name, c]));
@@ -73,15 +209,15 @@ class CompanyStorage {
     });
     
     const merged = Array.from(existingMap.values());
-    this.saveCompanies(merged);
+    await this.saveCompanies(merged);
     return merged;
   }
 
   /**
    * Update vacancy data for a company
    */
-  updateCompanyVacancies(companyName, vacancyData) {
-    const companies = this.getAllCompanies();
+  async updateCompanyVacancies(companyName, vacancyData) {
+    const companies = await this.getAllCompanies();
     const company = companies.find(c => c.name === companyName);
     
     if (!company) {
@@ -94,38 +230,38 @@ class CompanyStorage {
     };
     company.lastUpdated = new Date().toISOString();
     
-    this.saveCompanies(companies);
+    await this.saveCompanies(companies);
     return company;
   }
 
   /**
    * Get a single company by name
    */
-  getCompany(companyName) {
-    const companies = this.getAllCompanies();
+  async getCompany(companyName) {
+    const companies = await this.getAllCompanies();
     return companies.find(c => c.name === companyName);
   }
 
   /**
    * Clear all cached companies
    */
-  clearAll() {
-    localStorage.removeItem(this.storageKey);
+  async clearAll() {
+    await this.saveCompanies([]);
   }
 
   /**
    * Get companies that need vacancy check
    */
-  getCompaniesNeedingVacancyCheck() {
-    const companies = this.getAllCompanies();
+  async getCompaniesNeedingVacancyCheck() {
+    const companies = await this.getAllCompanies();
     return companies.filter(c => !c.vacancies || !c.vacancies.checkedAt);
   }
 
   /**
    * Get companies with matching vacancies
    */
-  getCompaniesByMatchCount() {
-    const companies = this.getAllCompanies();
+  async getCompaniesByMatchCount() {
+    const companies = await this.getAllCompanies();
     return companies
       .filter(c => c.vacancies && c.vacancies.matching_roles)
       .sort((a, b) => {

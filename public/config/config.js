@@ -81,6 +81,35 @@ class ConfigManager {
     return this.getDefaults().apiTemperature ?? 0.2;
   }
 
+  getGithubRepo() {
+    return this.getDefaults().githubRepo || 'Patspang/recruitment-agent';
+  }
+
+  getGithubBranch() {
+    return this.getDefaults().githubBranch || 'data';
+  }
+
+  getGithubToken() {
+    // Priority: localStorage, then environment
+    return localStorage.getItem('github_token') || process?.env?.GITHUB_TOKEN || null;
+  }
+
+  setGithubToken(token) {
+    if (!token || typeof token !== 'string') {
+      throw new Error('GitHub token must be a non-empty string');
+    }
+    localStorage.setItem('github_token', token.trim());
+    return true;
+  }
+
+  clearGithubToken() {
+    localStorage.removeItem('github_token');
+  }
+
+  hasGithubToken() {
+    return !!this.getGithubToken();
+  }
+
   getDefaults() {
     if (!this.defaults) {
       throw new Error('Configuration not initialized');

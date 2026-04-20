@@ -296,6 +296,24 @@ class UIManager {
     }
   }
 
+  /**
+   * Show GitHub token configuration modal/section
+   */
+  showGithubTokenPrompt() {
+    this.log('GitHub token is required for shared storage. Please configure it.', 'warn');
+    const existing = document.getElementById('github-token-prompt');
+    if (existing) {
+      existing.classList.add('visible');
+    }
+  }
+
+  hideGithubTokenPrompt() {
+    const existing = document.getElementById('github-token-prompt');
+    if (existing) {
+      existing.classList.remove('visible');
+    }
+  }
+
   getLogHistory() {
     return this.logHistory;
   }

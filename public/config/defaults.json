@@ -19,5 +19,7 @@
   "apiModel": "gpt-5.4-nano",
   "apiMaxTokens": 3000,
   "apiTemperature": 0.2,
-  "companyCountTarget": "12-16"
+  "companyCountTarget": "12-16",
+  "githubRepo": "Patspang/recruitment-agent",
+  "githubBranch": "data"
 }

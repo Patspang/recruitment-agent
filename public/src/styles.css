@@ -599,6 +599,20 @@ body {
   line-height: 1.4;
 }
 
+/* GitHub Token Configuration (hidden by default, shown with .visible) */
+#github-token-prompt {
+  background: var(--warn-light);
+  border: 1px solid #E8D4C8;
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+#github-token-prompt.visible {
+  display: block;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .main {

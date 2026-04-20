@@ -44,6 +44,25 @@
       </div>
     </div>
 
+    <!-- GitHub Token Configuration -->
+    <div id="github-token-prompt">
+      <label class="api-key-label">GitHub Token Required</label>
+      <input 
+        type="password" 
+        class="api-key-input" 
+        id="github-token-input" 
+        placeholder="Enter your GitHub token"
+        autocomplete="off"
+      />
+      <div class="api-key-actions">
+        <button class="api-key-button" onclick="configureGithubToken()">Configure</button>
+        <button class="api-key-button secondary" onclick="clearConfiguredGithubToken()">Clear stored token</button>
+      </div>
+      <div class="api-key-help">
+        Create a fine-grained PAT at <a href="https://github.com/settings/tokens?type=beta" target="_blank" style="color: var(--warn);">github.com/settings/tokens</a>
+      </div>
+    </div>
+
     <div class="section-label">Target role titles</div>
     <div class="tags-wrap" id="roles-wrap"></div>
     <div class="tag-add-row">
@@ -120,14 +139,82 @@ function clearConfiguredApiKey() {
   appState.clearApiKey();
 }
 
-// Show API key prompt if needed
+function configureGithubToken() {
+  const input = document.getElementById('github-token-input');
+  if (!input || !input.value.trim()) {
+    ui.log('GitHub token cannot be empty', 'err');
+    return;
+  }
+  try {
+    config.setGithubToken(input.value.trim());
+    input.value = '';
+    ui.log('GitHub token configured successfully. Reload to apply changes.', 'ok');
+    // Hide the prompt after successful configuration
+    const prompt = document.getElementById('github-token-prompt');
+    if (prompt) {
+      setTimeout(() => prompt.classList.remove('visible'), 500);
+    }
+  } catch (error) {
+    ui.log(`Failed to configure GitHub token: ${error.message}`, 'err');
+    console.error('GitHub token configuration error:', error);
+  }
+}
+
+function clearConfiguredGithubToken() {
+  if (!config) return;
+  try {
+    config.clearGithubToken();
+    document.getElementById('github-token-input').value = '';
+    ui.log('GitHub token cleared. Please reconfigure.', 'info');
+    // Show the prompt after clearing
+    const prompt = document.getElementById('github-token-prompt');
+    if (prompt) {
+      prompt.classList.add('visible');
+    }
+  } catch (error) {
+    ui.log(`Failed to clear GitHub token: ${error.message}`, 'err');
+  }
+}
+
+// Show prompts if needed and add event listeners
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
+    // Handle API key prompt
+    const apiKeyPrompt = document.getElementById('api-key-prompt');
     if (!config.hasApiKey()) {
-      const prompt = document.getElementById('api-key-prompt');
-      if (prompt) {
-        prompt.classList.add('visible');
-      }
+      if (apiKeyPrompt) apiKeyPrompt.classList.add('visible');
+    } else {
+      if (apiKeyPrompt) apiKeyPrompt.classList.remove('visible');
+    }
+
+    // Handle GitHub token prompt - check config, fallback to localStorage
+    const githubPrompt = document.getElementById('github-token-prompt');
+    const hasToken = config.hasGithubToken() || !!localStorage.getItem('github_token');
+    if (!hasToken) {
+      if (githubPrompt) githubPrompt.classList.add('visible');
+    } else {
+      if (githubPrompt) githubPrompt.classList.remove('visible');
+      console.log('✓ GitHub token found in storage');
+    }
+
+    // Add Enter key support for GitHub token input
+    const githubTokenInput = document.getElementById('github-token-input');
+    if (githubTokenInput) {
+      githubTokenInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          configureGithubToken();
+        }
+      });
+    }
+
+    // Add Enter key support for API key input
+    const apiKeyInput = document.getElementById('api-key-input');
+    if (apiKeyInput) {
+      apiKeyInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          configureApiKey();
+        }
+      });
     }
   }, 500);
 });

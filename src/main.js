@@ -44,16 +44,25 @@ class AppState {
       this.updateConfigFields();
 
       // Load and display cached companies
-      const cachedCompanies = companyStorage.getAllCompanies();
-      if (cachedCompanies.length > 0) {
-        ui.log(`Loaded ${cachedCompanies.length} cached companies`, 'info');
-        ui.renderCompanies(cachedCompanies);
+      try {
+        const cachedCompanies = await companyStorage.getAllCompanies();
+        if (cachedCompanies.length > 0) {
+          ui.log(`Loaded ${cachedCompanies.length} cached companies`, 'info');
+          ui.renderCompanies(cachedCompanies);
+        }
+      } catch (error) {
+        ui.log(`Failed to load companies: ${error.message}`, 'warn');
+        console.warn('Failed to load companies from GitHub:', error);
       }
 
       ui.log('Application initialized', 'ok');
 
       if (!config.hasApiKey()) {
         ui.showApiKeyPrompt();
+      }
+
+      if (!config.hasGithubToken()) {
+        ui.showGithubTokenPrompt();
       }
     } catch (error) {
       console.error('Initialization error:', error);
@@ -236,7 +245,7 @@ class AppState {
       ui.log(`Found ${discoveredCompanies.length} companies`, 'ok');
 
       // Merge with existing companies
-      const allCompanies = companyStorage.mergeDiscovery(discoveredCompanies);
+      const allCompanies = await companyStorage.mergeDiscovery(discoveredCompanies);
       ui.log(`Total companies in database: ${allCompanies.length}`, 'info');
 
       // Display companies
@@ -362,10 +371,10 @@ IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list
       const results = await this.vacancyChecker.checkMultipleCompanies(companies, this.roles);
       
       // Update storage with vacancy data
-      results.forEach(result => {
+      results.forEach(async (result) => {
         if (result.company_name && !result.error) {
           try {
-            companyStorage.updateCompanyVacancies(result.company_name, result);
+            await companyStorage.updateCompanyVacancies(result.company_name, result);
             const matchCount = result.matching_roles ? result.matching_roles.length : 0;
             const urlDisplay = result.careers_url ? ` Visited: ${result.careers_url}` : '';
             ui.log(`Updated vacancies for ${result.company_name} → ${matchCount} matches.${urlDisplay}`, matchCount > 0 ? 'ok' : 'info');
@@ -378,7 +387,7 @@ IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list
       });
 
       // Re-render with updated vacancy data
-      const updatedCompanies = companyStorage.getAllCompanies();
+      const updatedCompanies = await companyStorage.getAllCompanies();
       ui.renderCompanies(updatedCompanies);
       
       ui.log('Batch vacancy check completed', 'ok');
@@ -391,7 +400,7 @@ IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list
    * Check vacancies for a single company (manual trigger)
    */
   async checkCompanyVacancies(companyName) {
-    const companies = companyStorage.getAllCompanies();
+    const companies = await companyStorage.getAllCompanies();
     const company = companies.find(c => c.name === companyName);
     
     if (!company) {
@@ -404,7 +413,7 @@ IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list
       const result = await this.vacancyChecker.checkCompanyVacancies(company, this.roles);
       
       if (!result.error) {
-        companyStorage.updateCompanyVacancies(companyName, result);
+        await companyStorage.updateCompanyVacancies(companyName, result);
         const matchCount = result.matching_roles ? result.matching_roles.length : 0;
         const urlDisplay = result.careers_url ? ` Visited: ${result.careers_url}` : '';
         ui.log(`Updated vacancies for ${companyName} → ${matchCount} matches.${urlDisplay}`, matchCount > 0 ? 'ok' : 'info');
@@ -413,7 +422,7 @@ IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list
       }
 
       // Re-render the updated company
-      const updatedCompanies = companyStorage.getAllCompanies();
+      const updatedCompanies = await companyStorage.getAllCompanies();
       ui.renderCompanies(updatedCompanies);
     } catch (error) {
       ui.log(`Failed to check vacancies for ${companyName}: ${error.message}`, 'err');
