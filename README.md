@@ -1,16 +1,16 @@
 # Job Scout Haarlem - Recruitment Agent
 
-A sophisticated, AI-powered recruitment discovery tool that helps find in-house recruitment/talent acquisition roles in the Haarlem area (Netherlands) using Claude API.
+An AI-powered recruitment discovery tool that helps find in-house recruitment/talent acquisition roles in the Haarlem area (Netherlands).
 
 ## Features
 
-✨ **AI-Powered Discovery** - Uses OpenAI with web search to identify recruitment roles at relevant companies
-🎯 **Smart Filtering** - Discover companies by location, sector, size, and role focus
-💾 **Persistent State** - Saves your searches and configurations locally
-🔐 **Secure API Key Management** - Handle your Anthropic API key safely
-✅ **Comprehensive Validation** - Real-time input validation and error handling
-📊 **Results Categorization** - Results grouped by hiring likelihood
-🎨 **Clean Design** - Beautiful, responsive interface with professional styling
+✨ **AI-Powered Discovery** - Uses OpenAI to identify relevant companies near Haarlem
+🎯 **Smart Filtering** - Filter by location, sector, size, and target role titles
+💾 **Persistent Company Database** - Discovered companies are saved to a GitHub `data` branch and sync across devices
+🔐 **Login Gate** - Simple access control to keep the tool private
+✅ **URL Verification** - Careers page URLs are verified before saving
+📊 **Results Categorisation** - Results grouped by hiring likelihood
+🎨 **Clean Design** - Responsive interface styled to AH brand guidelines
 
 ## Project Structure
 
@@ -60,12 +60,17 @@ npm start
 
 Then open http://localhost:8000 in your browser.
 
-3. **Configure API Key**
+3. **Sign in**
 
-When you first open the app, you'll see an API key prompt. Enter your OpenAI API key:
-- Get your key from: https://platform.openai.com/account/api-keys
-- Your key is stored in browser localStorage so it persists between visits
-- Use the "Clear stored key" button if you want to remove a saved key and reconfigure it
+The app requires a username and password on first visit. Once authenticated, the login screen won't appear again on the same device.
+
+4. **Configure your API keys**
+
+When you first open the app after login, you'll be prompted for:
+- **OpenAI API key** — from https://platform.openai.com/account/api-keys
+- **GitHub Personal Access Token** — from https://github.com/settings/tokens (needs `repo` scope, to read/write company data)
+
+Both are stored in browser localStorage and persist between visits.
 
 ## Usage
 
@@ -95,21 +100,16 @@ When you first open the app, you'll see an API key prompt. Enter your OpenAI API
 
 ### Data Persistence
 
-Your configuration is automatically saved to browser localStorage:
-- Target roles
-- Seed companies
-- Location settings
-- Company size preference
-- Sector focus
+**Company database** — discovered companies are written to `data.json` on the `data` branch of this repo via the GitHub API. This means your results sync across devices as long as a valid GitHub token is configured.
 
-Your searches persist across browser sessions.
+**App configuration** (roles, seeds, location settings) is saved to browser localStorage and persists per device.
 
 ## Architecture
 
 ### Configuration Management (`config/config.js`)
 - Loads default settings from `defaults.json`
-- Manages API key from localStorage or environment
-- Provides validated access to configuration
+- Manages API keys from localStorage (browser-safe, no `process.env` in production)
+- Provides validated access to GitHub repo and branch settings
 
 ### API Client (`src/api.js`)
 - Handles Anthropic Claude API communication

@@ -6,8 +6,125 @@
   <meta name="description" content="Job Scout Haarlem is an AI-powered recruiter discovery tool for in-house recruitment roles in the greater Haarlem area.">
   <title>Job Scout Haarlem</title>
   <link rel="stylesheet" href="src/styles.css">
+<style>
+  #login-overlay {
+    position: fixed;
+    inset: 0;
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  #login-overlay.hidden { display: none; }
+  .login-box {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 36px 32px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  }
+  .login-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: #1a1a1a;
+  }
+  .login-box p {
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 24px;
+  }
+  .login-box label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .login-box input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 12px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .login-box input:focus { border-color: #00ADE6; }
+  .login-box button {
+    width: 100%;
+    height: 40px;
+    background: #00ADE6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+  .login-box button:hover { background: #0099cc; }
+  .login-error {
+    font-size: 13px;
+    color: #d81b60;
+    margin-top: 12px;
+    min-height: 20px;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
+
+<div id="login-overlay">
+  <div class="login-box">
+    <h2>Job Scout Haarlem</h2>
+    <p>Sign in to continue.</p>
+    <label for="login-username">Username</label>
+    <input type="text" id="login-username" placeholder="Username" autocomplete="username" />
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" />
+    <button onclick="doLogin()">Sign in</button>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<script>
+  const USERS = [
+    { username: 'Danielle', password: 'Qwerty!1234' },
+    { username: 'Dick',     password: 'Qwerty!1234' }
+  ];
+
+  function doLogin() {
+    const username = document.getElementById('login-username').value.trim();
+    const password = document.getElementById('login-password').value;
+    const match = USERS.find(u => u.username.toLowerCase() === username.toLowerCase() && u.password === password);
+    if (match) {
+      localStorage.setItem('auth_user', match.username);
+      document.getElementById('login-overlay').classList.add('hidden');
+    } else {
+      document.getElementById('login-error').textContent = 'Incorrect username or password.';
+    }
+  }
+
+  // Check if already authenticated
+  if (localStorage.getItem('auth_user')) {
+    document.getElementById('login-overlay').classList.add('hidden');
+  }
+
+  // Enter key support
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !document.getElementById('login-overlay').classList.contains('hidden')) {
+      doLogin();
+    }
+  });
+</script>
 
 <div class="header">
   <div class="header-top">
