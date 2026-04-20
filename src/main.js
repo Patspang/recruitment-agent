@@ -48,6 +48,7 @@ class AppState {
         const cachedCompanies = await companyStorage.getAllCompanies();
         if (cachedCompanies.length > 0) {
           ui.log(`Loaded ${cachedCompanies.length} cached companies`, 'info');
+          ui.toggleResults(true);
           ui.renderCompanies(cachedCompanies);
         }
       } catch (error) {
@@ -244,6 +245,10 @@ class AppState {
 
       ui.log(`Found ${discoveredCompanies.length} companies`, 'ok');
 
+      // Verify careers URLs are reachable
+      ui.log('Verifying careers URLs…', 'info');
+      await this.verifyUrls(discoveredCompanies);
+
       // Merge with existing companies
       const allCompanies = await companyStorage.mergeDiscovery(discoveredCompanies);
       ui.log(`Total companies in database: ${allCompanies.length}`, 'info');
@@ -303,12 +308,41 @@ Return a JSON array of ${targetCount} companies. For each company include:
   "sector": "Sector",
   "size": "Approximate headcount e.g. ~500",
   "description": "1-2 sentence description of what they do and why they might have in-house recruitment",
-  "careers_url": "Best guess at careers page URL",
+  "careers_url": "The company's actual careers/jobs page URL — only include if you are confident it exists. Use the pattern https://www.<domain>/careers or /jobs or /werken-bij. If unsure, set to null.",
+  "website": "The company's main website URL",
   "likely_hiring": true or false (your assessment of whether they likely have relevant open roles now),
   "reasoning": "Brief reason for likely_hiring assessment"
 }
 
-IMPORTANT: Include ALL the seed companies (${this.seeds.join(', ')}) in the list. Return ONLY valid JSON array, no markdown, no explanation.`;
+IMPORTANT:
+- Include ALL the seed companies (${this.seeds.join(', ')}) in the list.
+- For careers_url: ONLY provide URLs you are confident actually exist. Do NOT fabricate or guess URLs. Use null if unsure.
+- Return ONLY valid JSON array, no markdown, no explanation.`;
+  }
+
+  /**
+   * Verify careers URLs are actually reachable, clear bad ones
+   */
+  async verifyUrls(companies) {
+    let verified = 0, cleared = 0;
+    for (const company of companies) {
+      if (!company.careers_url) continue;
+      try {
+        const resp = await fetch(company.careers_url, {
+          method: 'HEAD',
+          mode: 'no-cors',
+          signal: AbortSignal.timeout(5000)
+        });
+        // no-cors returns opaque response (status 0) which means the server responded
+        verified++;
+      } catch {
+        ui.log(`${company.name}: careers URL unreachable, falling back to website`, 'warn');
+        company.careers_url = company.website || null;
+        cleared++;
+      }
+    }
+    if (verified > 0) ui.log(`Verified ${verified} careers URLs`, 'ok');
+    if (cleared > 0) ui.log(`Cleared ${cleared} unreachable URLs`, 'warn');
   }
 
   saveToStorage() {

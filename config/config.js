@@ -42,7 +42,7 @@ class ConfigManager {
       return stored;
     }
 
-    return process?.env?.OPENAI_API_KEY || null;
+    try { return (typeof process !== 'undefined' && process.env?.OPENAI_API_KEY) || null; } catch { return null; }
   }
 
   setApiKey(key) {
@@ -91,7 +91,9 @@ class ConfigManager {
 
   getGithubToken() {
     // Priority: localStorage, then environment
-    return localStorage.getItem('github_token') || process?.env?.GITHUB_TOKEN || null;
+    try {
+      return localStorage.getItem('github_token') || (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) || null;
+    } catch { return localStorage.getItem('github_token') || null; }
   }
 
   setGithubToken(token) {
