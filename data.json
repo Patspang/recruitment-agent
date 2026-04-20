@@ -10,8 +10,16 @@
       "likely_hiring": true,
       "reasoning": "Retail and logistics hiring tends to be continuous; local brand presence in Haarlem suggests active recruitment.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Loods5",
+        "careers_url": "https://www.loods5.nl/vacatures",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Marcel's Green Soap",
@@ -23,8 +31,16 @@
       "likely_hiring": true,
       "reasoning": "FMCG brands frequently hire for production, supply chain, and commercial functions; likely active vacancies.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Marcel's Green Soap",
+        "careers_url": "https://www.marcelsgreensoap.com/nl/vacatures",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Haarlem",
@@ -36,8 +52,16 @@
       "likely_hiring": true,
       "reasoning": "Public-sector recruitment is ongoing and often includes corporate recruiter/talent partner roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Haarlem",
+        "careers_url": "https://werkenbij.haarlem.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Dopper",
@@ -49,8 +73,16 @@
       "likely_hiring": true,
       "reasoning": "Brand growth and international expansion commonly drive recurring hiring.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Dopper",
+        "careers_url": "https://www.dopper.com/nl-nl/pages/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Lidl Nederland",
@@ -62,8 +94,16 @@
       "likely_hiring": true,
       "reasoning": "Large retailer with continuous recruitment needs across stores and corporate functions.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Lidl Nederland",
+        "careers_url": "https://werkenbij.lidl.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Albert Heijn",
@@ -75,8 +115,16 @@
       "likely_hiring": true,
       "reasoning": "Grocery retail and logistics require ongoing recruitment; careers platform indicates active roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:51:02.369Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Albert Heijn",
+        "careers_url": "https://werkenbij.ah.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Ahold Delhaize (Corporate)",
@@ -88,8 +136,16 @@
       "likely_hiring": true,
       "reasoning": "Corporate functions and tech/operations hiring are typically continuous at this scale.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:51:02.369Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Ahold Delhaize (Corporate)",
+        "careers_url": "https://www.aholddelhaize.com/careers/",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Coolblue",
@@ -101,8 +157,16 @@
       "likely_hiring": true,
       "reasoning": "Rapid growth and frequent vacancies make relevant in-house TA roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Coolblue",
+        "careers_url": "https://www.coolblue.nl/werken-bij",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Booking.com",
@@ -114,8 +178,16 @@
       "likely_hiring": true,
       "reasoning": "Large tech employer with continuous hiring across functions and geographies.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Booking.com",
+        "careers_url": "https://careers.booking.com",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "TomTom",
@@ -127,8 +199,16 @@
       "likely_hiring": true,
       "reasoning": "Ongoing hiring cycles for tech and corporate functions are common.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "TomTom",
+        "careers_url": "https://www.tomtom.com/careers/",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "ING",
@@ -140,8 +220,16 @@
       "likely_hiring": true,
       "reasoning": "High-volume, structured recruitment processes make relevant roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "ING",
+        "careers_url": "https://www.ing.jobs",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Heineken",
@@ -153,8 +241,16 @@
       "likely_hiring": true,
       "reasoning": "Global FMCG with ongoing hiring cycles and established talent acquisition.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:51:02.369Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Heineken",
+        "careers_url": "https://www.theheinekencompany.com/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "MediaMarktSaturn",
@@ -166,8 +262,16 @@
       "likely_hiring": false,
       "reasoning": "Likely to have TA capacity, but specific recruiter openings may be less predictable; assessment is slightly conservative.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "MediaMarktSaturn",
+        "careers_url": "https://www.mediamarkt.nl/nl/c/mediamarkt-vacatures.html",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Zaanstad",
@@ -179,8 +283,16 @@
       "likely_hiring": true,
       "reasoning": "Public sector roles are regularly posted; internal HR/recruitment is common.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:51:02.369Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Zaanstad",
+        "careers_url": "https://www.zaanstad.nl/werkenbij",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Amstelveen",
@@ -192,8 +304,16 @@
       "likely_hiring": true,
       "reasoning": "Municipal hiring is typically continuous due to service and staffing requirements.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:51:02.369Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Amstelveen",
+        "careers_url": "https://www.amstelveen.nl/werken-bij",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Albert Heijn (Ahold Delhaize)",
@@ -205,8 +325,16 @@
       "likely_hiring": true,
       "reasoning": "Ongoing hiring at scale across stores, logistics, and corporate roles.",
       "discoveredAt": "2026-04-20T19:54:25.604Z",
-      "lastUpdated": "2026-04-20T19:54:25.604Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Albert Heijn (Ahold Delhaize)",
+        "careers_url": "https://werkenbij.ah.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Adyen",
@@ -218,8 +346,16 @@
       "likely_hiring": true,
       "reasoning": "Fintech growth and frequent hiring for corporate and technical roles.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Adyen",
+        "careers_url": "https://www.adyen.com/en/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Zandvoort",
@@ -231,8 +367,16 @@
       "likely_hiring": false,
       "reasoning": "Public-sector hiring is possible, but openings for senior TA/recruiter roles may be intermittent.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Zandvoort",
+        "careers_url": "https://www.werkenbijzandvoort.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Haarlemmermeer",
@@ -244,8 +388,16 @@
       "likely_hiring": true,
       "reasoning": "Large municipality with continuous hiring demand and structured recruitment.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Haarlemmermeer",
+        "careers_url": "https://www.haarlemmermeer.nl/werken-bij",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     },
     {
       "name": "Gemeente Amsterdam",
@@ -257,9 +409,17 @@
       "likely_hiring": true,
       "reasoning": "High hiring volume and established internal recruitment/talent acquisition teams.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:54:25.605Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "vacancies": {
+        "company_name": "Gemeente Amsterdam",
+        "careers_url": "https://werken.amsterdam.nl",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-20T19:55:24.148Z"
+      }
     }
   ],
-  "lastUpdated": "2026-04-20T19:54:25.605Z"
+  "lastUpdated": "2026-04-20T19:55:24.156Z"
 }
