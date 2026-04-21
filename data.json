@@ -10,15 +10,15 @@
       "likely_hiring": true,
       "reasoning": "Seed company; retail organization commonly hires recruiters/HR for internal talent acquisition.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
+      "lastUpdated": "2026-04-21T06:02:28.170Z",
       "vacancies": {
         "company_name": "Loods5",
-        "careers_url": "https://www.loods5.nl/vacatures",
+        "careers_url": "https://www.glassdoor.com/Jobs/Loods-5-Jobs-E4685861.htm",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.170Z"
       },
       "website": "https://www.loods5.nl/"
     },
@@ -32,20 +32,15 @@
       "likely_hiring": false,
       "reasoning": "Hoewel er een vacaturespagina is, lijkt de organisatie relatief klein (minder dan 50), waardoor in-house corporate recruitment rollen minder waarschijnlijk zijn.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.051Z",
+      "lastUpdated": "2026-04-21T06:02:28.170Z",
       "vacancies": {
         "company_name": "Marcel's Green Soap",
-        "careers_url": "https://marcelsgreensoap.com/pages/vacatures",
+        "careers_url": "https://peopleselect.nl/vacatures/duurzaamheid-innovatie-manager-marcels-green-soap/",
         "error": null,
-        "total_roles": 1,
-        "all_roles": [
-          {
-            "title": "Key Account Manager",
-            "url": "https://marcelsgreensoap.com/pages/vacancies/key-account-manager"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.051Z"
+        "checkedAt": "2026-04-21T06:02:28.170Z"
       },
       "website": "https://marcelsgreensoap.com/"
     },
@@ -59,88 +54,15 @@
       "likely_hiring": true,
       "reasoning": "Gemeenten hebben structureel werving nodig (o.a. beleid, uitvoering en projecten) en publiceren vacatures via de werken-bij site.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.051Z",
+      "lastUpdated": "2026-04-21T06:02:28.171Z",
       "vacancies": {
         "company_name": "Gemeente Haarlem",
-        "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+        "careers_url": "https://haarlem.nl/werken-bij-haarlem",
         "error": null,
-        "total_roles": 18,
-        "all_roles": [
-          {
-            "title": "Contractmanager ICT",
-            "url": "https://haarlem.nl/werkenbij/contractmanager-ict"
-          },
-          {
-            "title": "Managementondersteuner",
-            "url": "https://haarlem.nl/werkenbij/managementondersteuner"
-          },
-          {
-            "title": "Medewerker begraafplaatsen",
-            "url": "https://haarlem.nl/werkenbij/medewerker-begraafplaatsen"
-          },
-          {
-            "title": "Business controller Fysiek Domein",
-            "url": "https://haarlem.nl/werkenbij/business-controller-fysiek-domein"
-          },
-          {
-            "title": "Strategisch adviseur regionale arbeidsmarkt",
-            "url": "https://haarlem.nl/werkenbij/strategisch-adviseur-regionale-arbeidsmarkt"
-          },
-          {
-            "title": "Regisseur openbare ruimte – specialisme ‘Groen’",
-            "url": "https://haarlem.nl/werkenbij/regisseur-openbare-ruimte-specialisme-groen"
-          },
-          {
-            "title": "Marktmeester",
-            "url": "https://haarlem.nl/werkenbij/marktmeester"
-          },
-          {
-            "title": "Integraal Handhaver",
-            "url": "https://haarlem.nl/werkenbij/integraal-handhaver"
-          },
-          {
-            "title": "Functioneel beheerder Klantcontactcentrum en NH Veilig",
-            "url": "https://haarlem.nl/werkenbij/functioneel-beheerder-klantcontactcentrum-en-nh-veilig"
-          },
-          {
-            "title": "Functioneel beheerder Gemeentebreed",
-            "url": "https://haarlem.nl/werkenbij/functioneel-beheerder-gemeentebreed"
-          },
-          {
-            "title": "Klantmanager re-integratie niet-uitkeringsgerechtigden",
-            "url": "https://haarlem.nl/werkenbij/klantmanager-re-integratie-niet-uitkeringsgerechtigden"
-          },
-          {
-            "title": "Strateeg Beleid Openbare Ruimte: specialisme ondergrond, water & klimaat",
-            "url": "https://haarlem.nl/werkenbij/strateeg-beleid-openbare-ruimte-specialisme-ondergrond-water-klimaat"
-          },
-          {
-            "title": "Contractmanager Dagelijks beheer en onderhoud",
-            "url": "https://haarlem.nl/werkenbij/contractmanager-dagelijks-beheer-en-onderhoud"
-          },
-          {
-            "title": "Casemanager Omgevingsvergunningen",
-            "url": "https://haarlem.nl/werkenbij/casemanager-omgevingsvergunningen"
-          },
-          {
-            "title": "Jurist Publiekrecht",
-            "url": "https://haarlem.nl/werkenbij/jurist-publiekrecht"
-          },
-          {
-            "title": "Gegevensbeheerder/recordmanager informatiebeheer",
-            "url": "https://haarlem.nl/werkenbij/gegevensbeheerderrecordmanager-informatiebeheer"
-          },
-          {
-            "title": "Inspecteur Bouw",
-            "url": "https://haarlem.nl/werkenbij/inspecteur-bouw"
-          },
-          {
-            "title": "Senior/Medior Projectmanagers Civiele projecten",
-            "url": "https://haarlem.nl/werkenbij/seniormedior-projectmanagers-civiele-projecten"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.051Z"
+        "checkedAt": "2026-04-21T06:02:28.171Z"
       },
       "website": "https://haarlem.nl/"
     },
@@ -154,15 +76,15 @@
       "likely_hiring": true,
       "reasoning": "Seed company; consumer brand with ongoing hiring needs and internal People/Recruitment roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
+      "lastUpdated": "2026-04-21T06:02:28.171Z",
       "vacancies": {
         "company_name": "Dopper",
-        "careers_url": "https://jobs.dopper.com/",
+        "careers_url": "https://nl.linkedin.com/jobs/dopper-jobs",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.051Z"
+        "checkedAt": "2026-04-21T06:02:28.171Z"
       },
       "website": "https://www.dopper.com/"
     },
@@ -176,15 +98,15 @@
       "likely_hiring": true,
       "reasoning": "Large retailer with continuous recruitment needs across stores and corporate functions.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.171Z",
       "vacancies": {
         "company_name": "Lidl Nederland",
-        "careers_url": "https://www.werkenbijlidl.nl/",
+        "careers_url": "https://www.youngcapital.nl/werken-bij/lidl-vacatures",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.171Z"
       }
     },
     {
@@ -197,15 +119,40 @@
       "likely_hiring": true,
       "reasoning": "Grocery retail and logistics require ongoing recruitment; careers platform indicates active roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.171Z",
       "vacancies": {
         "company_name": "Albert Heijn",
-        "careers_url": "https://werk.ah.nl/",
+        "careers_url": "https://werk.ah.nl/vacatures/tussenjaar-kom-werken-bij-albert-heijn-meeuwenweg-kampen-78504891/",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
-        "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "total_roles": 4,
+        "all_roles": [
+          {
+            "title": "Medewerker Facility Desk",
+            "url": "https://werk.ah.nl/vacature/37660/medewerker-facility-desk-1"
+          },
+          {
+            "title": "Talent Tracks",
+            "url": "https://werk.ah.nl/talent-track"
+          },
+          {
+            "title": "Stage Sourcing Fruit",
+            "url": "https://werk.ah.nl/vacature/41997/stage-sourcing-fruit"
+          },
+          {
+            "title": "Junior Kotlin Developer - Talent Track",
+            "url": "https://werk.ah.nl/en/vacancy/43550/junior-kotlin-developer-talent-track"
+          }
+        ],
+        "matching_roles": [
+          {
+            "job_title": "Talent Tracks",
+            "target_role": "Talent Partner",
+            "match_strength": "partial",
+            "score": 0.5285714285714286,
+            "url": "https://werk.ah.nl/talent-track"
+          }
+        ],
+        "checkedAt": "2026-04-21T06:02:28.171Z"
       }
     },
     {
@@ -218,15 +165,20 @@
       "likely_hiring": true,
       "reasoning": "Corporate functions and tech/operations hiring are typically continuous at this scale.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.171Z",
       "vacancies": {
         "company_name": "Ahold Delhaize (Corporate)",
-        "careers_url": "https://careers.aholddelhaize.com/",
+        "careers_url": "https://aholddelhaize.com/careers/",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
+        "total_roles": 1,
+        "all_roles": [
+          {
+            "title": "Talent Acquisition Specialist",
+            "url": "https://careers.aholddelhaize.com/vacancy/2628/talent-acquisition-specialist"
+          }
+        ],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.171Z"
       }
     },
     {
@@ -239,92 +191,20 @@
       "likely_hiring": true,
       "reasoning": "Rapid growth and frequent vacancies make relevant in-house TA roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.172Z",
       "vacancies": {
         "company_name": "Coolblue",
-        "careers_url": "https://www.coolblue.nl/vacatures",
+        "careers_url": "https://www.coolblue.nl/vacatures/zoeken?srsltid=AfmBOorLDZvGdnYYQe7rgbe8gXftvVjapxjJFJaf545vl80qzMPoAv68",
         "error": null,
-        "total_roles": 17,
+        "total_roles": 1,
         "all_roles": [
           {
-            "title": "Junior Commercial Product Manager",
-            "url": null
-          },
-          {
-            "title": "Team Lead C#",
-            "url": null
-          },
-          {
-            "title": "Manager Store Real Estate & Construction",
-            "url": null
-          },
-          {
-            "title": "Workspace Support Administrator",
-            "url": "https://www.coolblue.nl/vacatures/workspace-support-administrator"
-          },
-          {
-            "title": "Manager Category Teams Bruingoed",
-            "url": "https://www.coolblue.nl/vacatures/manager-category-teams-bruingoed"
-          },
-          {
-            "title": "Monteur Technische Dienst",
-            "url": "https://www.coolblue.nl/vacatures/monteur-technische-dienst"
-          },
-          {
-            "title": "Storemanager",
-            "url": "https://www.coolblue.nl/vacatures/storemanager"
-          },
-          {
-            "title": "Talent Sourcer",
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer"
-          },
-          {
-            "title": "Vakantiewerk winkel",
-            "url": "https://www.coolblue.nl/vacatures/vakantiewerk-winkel"
-          },
-          {
-            "title": "Trainer CoolblueBezorgt",
-            "url": "https://www.coolblue.nl/vacatures/trainer-coolbluebezorgt"
-          },
-          {
-            "title": "Winkelmedewerker",
-            "url": "https://www.coolblue.nl/vacatures/winkelmedewerker"
-          },
-          {
-            "title": "Stage HR Recruitment",
-            "url": "https://www.coolblue.nl/vacatures/stage-hr-recruitment"
-          },
-          {
-            "title": "C# Developer",
-            "url": "https://www.coolblue.nl/vacatures/c-developer"
-          },
-          {
-            "title": "Analytics Engineer",
-            "url": "https://www.coolblue.nl/vacatures/analytics-engineer"
-          },
-          {
-            "title": "Marketing Data Specialist",
-            "url": "https://www.coolblue.nl/vacatures/marketing-data-specialist"
-          },
-          {
-            "title": "iOS developer",
-            "url": "https://www.coolblue.nl/vacatures/ios-developer"
-          },
-          {
-            "title": "Team Lead Typescript",
-            "url": "https://www.coolblue.nl/vacatures/lead-software-engineer-typescript"
+            "title": "Talent Sourcer - 36-40 uur",
+            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOopVeG8XZELBr4X6Mbv6D0J9JT1PwweDXhB_iitOEusyk4u5WbgS"
           }
         ],
-        "matching_roles": [
-          {
-            "job_title": "Talent Sourcer",
-            "target_role": "Talent Partner",
-            "match_strength": "partial",
-            "score": 0.5571428571428572,
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer"
-          }
-        ],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.172Z"
       }
     },
     {
@@ -337,15 +217,15 @@
       "likely_hiring": true,
       "reasoning": "Large tech employer with ongoing hiring and dedicated internal recruitment.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T06:02:28.172Z",
       "vacancies": {
         "company_name": "Booking.com",
-        "careers_url": "https://careers.booking.com",
+        "careers_url": "https://careers.booking.com/",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.172Z"
       },
       "website": "https://www.booking.com"
     },
@@ -359,15 +239,15 @@
       "likely_hiring": true,
       "reasoning": "Tech employer with structured TA and likely recruiter/talent partner roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T06:02:28.172Z",
       "vacancies": {
         "company_name": "TomTom",
-        "careers_url": "https://www.tomtom.com/careers/",
+        "careers_url": "https://www.tomtom.com/careers/joboverview/",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.172Z"
       },
       "website": "https://www.tomtom.com"
     },
@@ -381,15 +261,28 @@
       "likely_hiring": true,
       "reasoning": "Large employer with frequent openings and established internal TA/recruiter roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T06:02:28.172Z",
       "vacancies": {
         "company_name": "ING",
-        "careers_url": "https://www.ing.jobs",
+        "careers_url": "https://careers.ing.com/en/search-jobs/Netherlands/2618/2/2750405/52x25/5x75/50/2",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
+        "total_roles": 3,
+        "all_roles": [
+          {
+            "title": "Talent Acquisition Internship at ING",
+            "url": "https://careers.ing.com/en/job/brussel/talent-acquisition-internship/3121/37355821184"
+          },
+          {
+            "title": "Talent Acquisition Consultant (Maternity Coverage) at ING",
+            "url": "https://careers.ing.com/en/job/slovakia/talent-acquisition-consultant-maternity-coverage/3121/37003013888"
+          },
+          {
+            "title": "Talent Acquisition Consultant (Maternity Coverage) - ING Careers",
+            "url": "https://careers.ing.com/en/job_location/slowaakse-republiek/talent-acquisition-consultant-maternity-coverage/3121/37003013888/18174"
+          }
+        ],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.172Z"
       },
       "website": "https://www.ing.com"
     },
@@ -403,15 +296,20 @@
       "likely_hiring": true,
       "reasoning": "Large FMCG employer with ongoing recruitment and internal TA capacity.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Heineken",
-        "careers_url": "https://www.theheinekencompany.com/careers",
+        "careers_url": "https://careers.theheinekencompany.com/",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
+        "total_roles": 1,
+        "all_roles": [
+          {
+            "title": "Global Talent Acquisition & Employer Brand Coordinator",
+            "url": "https://careers.theheinekencompany.com/PolandHGSS/job/Krak%C3%B3w-Global-Talent-Acquisition-&-Employer-Brand-Coordinator-31-864/1372947933/"
+          }
+        ],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       },
       "website": "https://www.theheinekencompany.com"
     },
@@ -425,15 +323,15 @@
       "likely_hiring": false,
       "reasoning": "Likely to have TA capacity, but specific recruiter openings may be less predictable; assessment is slightly conservative.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "MediaMarktSaturn",
-        "careers_url": "https://careers.mediamarktsaturn.com/",
+        "careers_url": "https://careers.mediamarktsaturn.com/MediaMarktBE/search/?locale=nl_NL",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -446,52 +344,15 @@
       "likely_hiring": true,
       "reasoning": "Public sector roles are regularly posted; internal HR/recruitment is common.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Zaanstad",
         "careers_url": "https://werkenbij.zaanstad.nl/vacatures/",
         "error": null,
-        "total_roles": 7,
-        "all_roles": [
-          {
-            "title": "Netwerkbeheerder",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/netwerkbeheerder-1284810/"
-          },
-          {
-            "title": "Senior Webredacteur",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/senior-webredacteur-1277895/"
-          },
-          {
-            "title": "Projectleider Inkoop",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/projectleider-inkoop-1286134/"
-          },
-          {
-            "title": "Casus Regisseur KOT",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/casus-regisseur-kot-1288428/"
-          },
-          {
-            "title": "Stage – Duurzame Bouw",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/stage-duurzame-bouw-1290611/"
-          },
-          {
-            "title": "Wijkverbinder Pact Zaandam-Oost",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/wijkverbinder-pact-zaandam-oost-1268768/"
-          },
-          {
-            "title": "Projectmanager Gebiedsontwikkeling",
-            "url": "https://werkenbij.zaanstad.nl/vacatures/projectmanager-gebiedsontwikkeling-1267950/"
-          }
-        ],
-        "matching_roles": [
-          {
-            "job_title": "Senior Webredacteur",
-            "target_role": "Senior Recruiter",
-            "match_strength": "partial",
-            "score": 0.5526315789473684,
-            "url": "https://werkenbij.zaanstad.nl/vacatures/senior-webredacteur-1277895/"
-          }
-        ],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -504,56 +365,20 @@
       "likely_hiring": true,
       "reasoning": "Municipal hiring is typically continuous due to service and staffing requirements.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Amstelveen",
-        "careers_url": "https://werkenvoor.amstelveen.nl/vacatures",
+        "careers_url": "https://nl.linkedin.com/company/gemeente-amstelveen/jobs",
         "error": null,
-        "total_roles": 10,
+        "total_roles": 1,
         "all_roles": [
           {
-            "title": "BRP Specialist",
-            "url": "https://werkenvoor.amstelveen.nl/brp-specialist-1"
-          },
-          {
-            "title": "Juridisch Adviseur Grondzaken",
-            "url": "https://werkenvoor.amstelveen.nl/juridisch-adviseur-grondzaken-1"
-          },
-          {
-            "title": "Projectplanner Openbare Ruimte",
-            "url": "https://werkenvoor.amstelveen.nl/projectplanner-openbare-ruimte-0"
-          },
-          {
-            "title": "Senior Financieel Adviseur Planning en Control",
-            "url": "https://werkenvoor.amstelveen.nl/senior-financieel-adviseur-planning-en-control-4"
-          },
-          {
-            "title": "Beleidsadviseur Jeugdhulp",
-            "url": "https://werkenvoor.amstelveen.nl/beleidsadviseur-jeugdhulp"
-          },
-          {
-            "title": "Projectmanager Civiele Techniek",
-            "url": "https://werkenvoor.amstelveen.nl/projectmanager-civiele-techniek-0"
-          },
-          {
-            "title": "Casusregisseur Sociaal team",
-            "url": "https://werkenvoor.amstelveen.nl/casusregisseur-sociaal-team-5"
-          },
-          {
-            "title": "Chauffeur Afvalbeheer",
-            "url": "https://werkenvoor.amstelveen.nl/chauffeur-afvalbeheer-3"
-          },
-          {
-            "title": "Senior Financieel Adviseur Planning en Control ",
-            "url": "https://werkenvoor.amstelveen.nl/senior-financieel-adviseur-planning-en-control-3"
-          },
-          {
-            "title": "Planeconoom",
-            "url": "https://werkenvoor.amstelveen.nl/planeconoom-3"
+            "title": "Recruiter / Talent Acquisition Business Partner",
+            "url": "https://nl.linkedin.com/jobs/view/recruiter-talent-acquisition-business-partner-at-royal-floraholland-4381971744"
           }
         ],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -566,15 +391,28 @@
       "likely_hiring": true,
       "reasoning": "High-volume employer with structured recruitment processes and likely internal recruiters.",
       "discoveredAt": "2026-04-20T19:54:25.604Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Albert Heijn (Ahold Delhaize)",
-        "careers_url": "https://werkenbij.ah.nl",
+        "careers_url": "https://werk.ah.nl/vacatures/bedrijfsonderdeel/hoofdkantoor",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
+        "total_roles": 3,
+        "all_roles": [
+          {
+            "title": "Maintenance & Reliability Specialist Assetmanagement",
+            "url": "https://werk.ah.nl/vacature/41603/maintenance-reliability-specialist-assetmanagement"
+          },
+          {
+            "title": "Medior Machine Learning Engineer Digital(Python, MLOps, Docker ...",
+            "url": "https://werk.ah.nl/vacature/43129/medior-machine-learning-engineer-digital-python-mlops-docker-kubernetes"
+          },
+          {
+            "title": "Specialist Learning & Development",
+            "url": "https://werk.ah.nl/vacature/43617/specialist-learning-development"
+          }
+        ],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       },
       "website": "https://www.ah.nl"
     },
@@ -588,15 +426,44 @@
       "likely_hiring": true,
       "reasoning": "Fintech growth and frequent hiring for corporate and technical roles.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Adyen",
-        "careers_url": "https://careers.adyen.com/",
+        "careers_url": "https://job-boards.greenhouse.io/adyen/jobs/7077102",
         "error": null,
-        "total_roles": 0,
-        "all_roles": [],
+        "total_roles": 7,
+        "all_roles": [
+          {
+            "title": "Senior Recruitment Business Partner, Commercial",
+            "url": "https://job-boards.greenhouse.io/adyen/jobs/7355700"
+          },
+          {
+            "title": "Senior Recruitment Business Partner",
+            "url": "http://job-boards.greenhouse.io/adyen/jobs/7585548"
+          },
+          {
+            "title": "Senior Recruiter, Commercial",
+            "url": "https://job-boards.greenhouse.io/adyen/jobs/7564875"
+          },
+          {
+            "title": "Senior Tech Recruitment Business Partner",
+            "url": "https://job-boards.greenhouse.io/adyen/jobs/7538820"
+          },
+          {
+            "title": "RPO Tech Recruitment Business Partner",
+            "url": "http://job-boards.greenhouse.io/adyen/jobs/7657087"
+          },
+          {
+            "title": "Senior Technical Recruiter",
+            "url": "https://job-boards.greenhouse.io/adyen/jobs/7467255"
+          },
+          {
+            "title": "Senior Recruitment Business Partner (Japan Market)",
+            "url": "https://job-boards.greenhouse.io/adyen/jobs/7574410"
+          }
+        ],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -609,64 +476,15 @@
       "likely_hiring": false,
       "reasoning": "Public-sector hiring is possible, but openings for senior TA/recruiter roles may be intermittent.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Zandvoort",
-        "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+        "careers_url": "https://zandvoort.nl/werken-bij-zandvoort",
         "error": null,
-        "total_roles": 12,
-        "all_roles": [
-          {
-            "title": "Bestuurscommunicatieadviseur",
-            "url": "https://haarlem.nl/werkenbij/bestuurscommunicatieadviseur"
-          },
-          {
-            "title": "Senior adviseur kwaliteit en toezicht",
-            "url": "https://haarlem.nl/werkenbij/senior-adviseur-kwaliteit-en-toezicht"
-          },
-          {
-            "title": "Contractmanager ICT",
-            "url": "https://haarlem.nl/werkenbij/contractmanager-ict"
-          },
-          {
-            "title": "Managementondersteuner",
-            "url": "https://haarlem.nl/werkenbij/managementondersteuner"
-          },
-          {
-            "title": "Medewerker begraafplaatsen",
-            "url": "https://haarlem.nl/werkenbij/medewerker-begraafplaatsen"
-          },
-          {
-            "title": "Beleidsadviseur Afval en Reiniging",
-            "url": "https://haarlem.nl/werkenbij/beleidsadviseur-afval-en-reiniging"
-          },
-          {
-            "title": "Beleidsadviseur Water & Klimaat - Specialisme Riolering",
-            "url": "https://haarlem.nl/werkenbij/beleidsadviseur-water-klimaat-specialisme-riolering"
-          },
-          {
-            "title": "Business controller Fysiek Domein",
-            "url": "https://haarlem.nl/werkenbij/business-controller-fysiek-domein"
-          },
-          {
-            "title": "Senior Handhaver Zandvoort",
-            "url": "https://haarlem.nl/werkenbij/senior-handhaver-zandvoort"
-          },
-          {
-            "title": "Strategisch adviseur regionale arbeidsmarkt",
-            "url": "https://haarlem.nl/werkenbij/strategisch-adviseur-regionale-arbeidsmarkt"
-          },
-          {
-            "title": "Regisseur openbare ruimte – specialisme ‘Groen’",
-            "url": "https://haarlem.nl/werkenbij/regisseur-openbare-ruimte-specialisme-groen"
-          },
-          {
-            "title": "Marktmeester",
-            "url": "https://haarlem.nl/werkenbij/marktmeester"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -679,15 +497,15 @@
       "likely_hiring": true,
       "reasoning": "Publieke sector heeft doorgaans doorlopende instroombehoefte; maar careers URL kon niet worden geverifieerd binnen de uitgevoerde websearch.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Haarlemmermeer",
-        "careers_url": "https://www.haarlemmermeer.nl/werken-bij",
+        "careers_url": "https://haarlemmermeergemeente.nl/werken-bij-gemeente-haarlemmermeer",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       },
       "website": "https://www.haarlemmermeer.nl/"
     },
@@ -701,15 +519,15 @@
       "likely_hiring": true,
       "reasoning": "High hiring volume and established internal recruitment/talent acquisition teams.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Amsterdam",
-        "careers_url": "https://werken.amsterdam.nl",
+        "careers_url": "https://www.randstad.nl/werknemers/vacatures/topwerkgevers/gemeente-amsterdam",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-20T19:55:24.148Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -723,8 +541,16 @@
       "likely_hiring": false,
       "reasoning": "Seed company included; careers URL not confidently verified.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Marcels Green Soap",
+        "careers_url": "https://peopleselect.nl/vacatures/duurzaamheid-innovatie-manager-marcels-green-soap/",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "PWN",
@@ -737,8 +563,16 @@
       "likely_hiring": true,
       "reasoning": "Seed company; large utilities provider with dedicated HR/recruitment teams.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "PWN",
+        "careers_url": "https://career.jobbird.com/nl/werken-bij/pwn",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Kennemerhart",
@@ -751,8 +585,16 @@
       "likely_hiring": true,
       "reasoning": "Seed company; large healthcare provider with ongoing recruitment.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Kennemerhart",
+        "careers_url": "https://career.jobbird.com/nl/werken-bij/kennemerhart",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Spaarne Gasthuis",
@@ -760,13 +602,21 @@
       "sector": "Healthcare / Hospital",
       "size": "~1000+",
       "description": "Hospital in Haarlem. Typically employs internal HR/recruitment for clinical and support roles.",
-      "careers_url": "https://www.spaarnegasthuis.nl/werken-bij",
+      "careers_url": "https://career.jobbird.com/nl/werken-bij/spaarne-gasthuis",
       "website": "https://www.spaarnegasthuis.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; major employer with structured talent acquisition.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Spaarne Gasthuis",
+        "careers_url": "https://career.jobbird.com/nl/werken-bij/spaarne-gasthuis",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "MSD (Merck Sharp & Dohme)",
@@ -774,13 +624,26 @@
       "sector": "Tech / Pharma (Life sciences)",
       "size": "~1000+",
       "description": "Pharmaceutical company with corporate and manufacturing/operations presence in the Netherlands. Often has internal recruiters and talent acquisition functions.",
-      "careers_url": "https://www.msd.nl/werken-bij-msd",
+      "careers_url": "https://jobs.msd.com/",
       "website": "https://www.msd.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; large multinational with dedicated internal recruitment.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "MSD (Merck Sharp & Dohme)",
+        "careers_url": "https://jobs.msd.com/",
+        "error": null,
+        "total_roles": 1,
+        "all_roles": [
+          {
+            "title": "Specialist, Talent Enablement Program Management and Operations",
+            "url": "https://jobs.msd.com/gb/en/job/R378905/Specialist-Talent-Enablement-Program-Management-and-Operations"
+          }
+        ],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Teva Nederland B.V.",
@@ -788,13 +651,21 @@
       "sector": "Pharma / Healthcare",
       "size": "~1000+",
       "description": "Generic and specialty medicines company. Likely to run internal recruitment and People & Culture roles for corporate and site hiring.",
-      "careers_url": "https://www.tevabv.nl/",
+      "careers_url": "https://vacaturesinfarma.nl/en/company/teva",
       "website": "https://www.tevabv.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; multinational with formal talent acquisition processes.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Teva Nederland B.V.",
+        "careers_url": "https://vacaturesinfarma.nl/en/company/teva",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Intos",
@@ -802,13 +673,21 @@
       "sector": "Tech / IT services",
       "size": "~50-200",
       "description": "IT services and solutions provider. May hire internal recruiters for technical and project staffing.",
-      "careers_url": null,
+      "careers_url": "https://intos.nl/werken-bij/",
       "website": "https://www.intos.nl/",
       "likely_hiring": false,
       "reasoning": "Seed company included; careers URL not confidently verified.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Intos",
+        "careers_url": "https://intos.nl/werken-bij/",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Loods 5",
@@ -816,57 +695,20 @@
       "sector": "Retail / Consumer goods",
       "size": "~250-500",
       "description": "Woonwarenhuis/retailorganisatie met meerdere vestigingen en een online kanaal. Werkt met eigen collecties en een breed assortiment voor consumenten en zakelijke klanten.",
-      "careers_url": "https://www.werkenbijloods5.nl/",
+      "careers_url": "https://career.jobbird.com/nl/werken-bij/loods-5",
       "website": "https://loods5.nl/",
       "likely_hiring": true,
       "reasoning": "Retailorganisaties met meerdere vestigingen hebben doorgaans doorlopende instroombehoefte; de werken-bij pagina toont openstaande vacatures en een recruitment contact.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Loods 5",
-        "careers_url": "https://www.werkenbijloods5.nl/",
+        "careers_url": "https://career.jobbird.com/nl/werken-bij/loods-5",
         "error": null,
-        "total_roles": 7,
-        "all_roles": [
-          {
-            "title": "Winkelmedewerker",
-            "url": "https://www.werkenbijloods5.nl/winkelmedewerker-5"
-          },
-          {
-            "title": "Customer Care Specialist",
-            "url": "https://www.werkenbijloods5.nl/customer-care-specialist-4"
-          },
-          {
-            "title": "Inkoop stagiair(e)",
-            "url": "https://www.werkenbijloods5.nl/inkoop-stagiair-e"
-          },
-          {
-            "title": "Performance Marketeer",
-            "url": "https://www.werkenbijloods5.nl/performance-marketeer/nl"
-          },
-          {
-            "title": "Stylist",
-            "url": "https://www.werkenbijloods5.nl/stylist-e"
-          },
-          {
-            "title": "Magazijnmedewerker",
-            "url": "https://www.werkenbijloods5.nl/magazijnmedewerker-4"
-          },
-          {
-            "title": "Senior Accountmanager",
-            "url": "https://www.werkenbijloods5.nl/senior-accountmanager-2"
-          }
-        ],
-        "matching_roles": [
-          {
-            "job_title": "Senior Accountmanager",
-            "target_role": "Senior Recruiter",
-            "match_strength": "partial",
-            "score": 0.5285714285714286,
-            "url": "https://www.werkenbijloods5.nl/senior-accountmanager-2"
-          }
-        ],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -875,65 +717,20 @@
       "sector": "Agrifood / Consumer & retail supply chain",
       "size": "~50-250",
       "description": "Groep actief in de agrifoodketen met activiteiten rond melkveehouderij en gerelateerde business. Heeft een eigen careers platform voor vacatures.",
-      "careers_url": "https://careers.theschippersgroup.com/",
+      "careers_url": "https://werkenbij.theschippersgroup.com/vacatures/",
       "website": "https://www.theschippersgroup.com/",
       "likely_hiring": false,
       "reasoning": "Geen directe indicatie van open recruitmentrollen in de careers portal op basis van de gevonden pagina; wel een dedicated careers omgeving.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "The Schippers Group",
-        "careers_url": "https://careers.theschippersgroup.com/",
+        "careers_url": "https://werkenbij.theschippersgroup.com/vacatures/",
         "error": null,
-        "total_roles": 11,
-        "all_roles": [
-          {
-            "title": "Country Manager Spain & Portugal",
-            "url": "https://careers.theschippersgroup.com/vacancy/country-manager-spain-portugal/"
-          },
-          {
-            "title": "Key Account Manager Ontario Monogastric",
-            "url": null
-          },
-          {
-            "title": "Content Marketeer Polska",
-            "url": "https://careers.theschippersgroup.com/vacancy/content-marketeer-polska/"
-          },
-          {
-            "title": "Digital Marketeer Polska – Performance",
-            "url": "https://careers.theschippersgroup.com/vacancy/digital-marketeer-polska-performance/"
-          },
-          {
-            "title": "Product Compliance Specialist",
-            "url": "https://careers.theschippersgroup.com/vacancy/product-compliance-specialist-2/"
-          },
-          {
-            "title": "Business Development Manager – Swine Division",
-            "url": "https://careers.theschippersgroup.com/vacancy/business-development-manager-swine-division/"
-          },
-          {
-            "title": "Content Marketeer Poland",
-            "url": "https://careers.theschippersgroup.com/vacancy/content-marketeer-poland/"
-          },
-          {
-            "title": "Digital Marketeer Poland – Performance",
-            "url": "https://careers.theschippersgroup.com/vacancy/digital-marketeer-poland-performance/"
-          },
-          {
-            "title": "Production Operator",
-            "url": "https://careers.theschippersgroup.com/vacancy/production-operator/"
-          },
-          {
-            "title": "Injection Molding Operator / Machine Operator",
-            "url": "https://careers.theschippersgroup.com/vacancy/injection-molding-operator-machine-operator/"
-          },
-          {
-            "title": "Director Swine Division",
-            "url": "https://careers.theschippersgroup.com/vacancy/director-swine-division/"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -947,7 +744,7 @@
       "likely_hiring": false,
       "reasoning": "Werken-bij pagina bestaat, maar er is geen directe bevestiging van actuele in-house recruitment vacatures in de gevonden content.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:51:50.393Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Buurts",
         "careers_url": "https://www.bijbuurt.nl/vacatures/",
@@ -955,7 +752,7 @@
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:51:50.393Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -1035,13 +832,21 @@
       "sector": "Recruitment / Staffing (public sector placements)",
       "size": "~500-1,000",
       "description": "Recruitment- en detacheringsorganisatie die vacatures voor o.a. gemeente Haarlem via haar platform aanbiedt. Niet in-house bij de gemeente, maar wel relevant voor talent acquisition netwerken.",
-      "careers_url": null,
+      "careers_url": "https://www.driessen.nl/vacatures/werken-bij-gemeente-haarlem",
       "website": "https://www.driessen.nl/",
       "likely_hiring": false,
       "reasoning": "De gevonden bron is een vacaturepagina voor gemeente Haarlem via Driessen; in-house corporate recruitment rollen bij Driessen konden niet worden geverifieerd met een careers URL.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:14:13.154Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Driessen (Gemeente Haarlem vacatures via partner)",
+        "careers_url": "https://www.driessen.nl/vacatures/werken-bij-gemeente-haarlem",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Homerun (ATS partner voor Dopper)",
@@ -1049,13 +854,21 @@
       "sector": "Tech / HR Tech",
       "size": "~50-250",
       "description": "HR-tech/ATS platform dat hiring workflows ondersteunt. Dopper gebruikt Homerun, wat het relevant maakt voor talent acquisition tooling en recruitment processen.",
-      "careers_url": null,
+      "careers_url": "https://homerun.app/careers",
       "website": "https://www.homerun.co/",
       "likely_hiring": false,
       "reasoning": "Er is wel context over Dopper en Homerun, maar een geverifieerde careers URL voor Homerun is niet gevonden in de uitgevoerde zoekresultaten.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:14:13.154Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "vacancies": {
+        "company_name": "Homerun (ATS partner voor Dopper)",
+        "careers_url": "https://homerun.app/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.173Z"
+      }
     },
     {
       "name": "Gemeente Haarlem (Vacaturespagina)",
@@ -1063,69 +876,20 @@
       "sector": "Municipality / Public sector",
       "size": "~1,700",
       "description": "Officiële vacaturespagina voor werken bij Haarlem en Zandvoort. Bevat actuele vacatures en informatie over sollicitatie.",
-      "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+      "careers_url": "https://www.youngcapital.nl/werken-bij/gemeente-haarlem-vacatures",
       "website": "https://haarlem.nl/",
       "likely_hiring": true,
       "reasoning": "Actuele vacaturepublicatie via de officiële vacaturespagina; gemeenten werven continu.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Gemeente Haarlem (Vacaturespagina)",
-        "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+        "careers_url": "https://www.youngcapital.nl/werken-bij/gemeente-haarlem-vacatures",
         "error": null,
-        "total_roles": 12,
-        "all_roles": [
-          {
-            "title": "Bestuurscommunicatieadviseur",
-            "url": "https://haarlem.nl/werkenbij/bestuurscommunicatieadviseur"
-          },
-          {
-            "title": "Senior adviseur kwaliteit en toezicht",
-            "url": "https://haarlem.nl/werkenbij/senior-adviseur-kwaliteit-en-toezicht"
-          },
-          {
-            "title": "Contractmanager ICT",
-            "url": "https://haarlem.nl/werkenbij/contractmanager-ict"
-          },
-          {
-            "title": "Managementondersteuner",
-            "url": "https://haarlem.nl/werkenbij/managementondersteuner"
-          },
-          {
-            "title": "Medewerker begraafplaatsen",
-            "url": "https://haarlem.nl/werkenbij/medewerker-begraafplaatsen"
-          },
-          {
-            "title": "Beleidsadviseur Afval en Reiniging",
-            "url": "https://haarlem.nl/werkenbij/beleidsadviseur-afval-en-reiniging"
-          },
-          {
-            "title": "Beleidsadviseur Water & Klimaat - Specialisme Riolering",
-            "url": "https://haarlem.nl/werkenbij/beleidsadviseur-water-klimaat-specialisme-riolering"
-          },
-          {
-            "title": "Business controller Fysiek Domein",
-            "url": "https://haarlem.nl/werkenbij/business-controller-fysiek-domein"
-          },
-          {
-            "title": "Senior Handhaver Zandvoort",
-            "url": "https://haarlem.nl/werkenbij/senior-handhaver-zandvoort"
-          },
-          {
-            "title": "Strategisch adviseur regionale arbeidsmarkt",
-            "url": "https://haarlem.nl/werkenbij/strategisch-adviseur-regionale-arbeidsmarkt"
-          },
-          {
-            "title": "Regisseur openbare ruimte – specialisme ‘Groen’",
-            "url": "https://haarlem.nl/werkenbij/regisseur-openbare-ruimte-specialisme-groen"
-          },
-          {
-            "title": "Marktmeester",
-            "url": "https://haarlem.nl/werkenbij/marktmeester"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -1139,7 +903,7 @@
       "likely_hiring": true,
       "reasoning": "Dedicated jobs portal met open rollen/aanmeldflow; passend bij corporate recruiter/talent acquisition partner profielen.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T06:02:28.173Z",
       "vacancies": {
         "company_name": "Dopper (Vacatures / Careers hub)",
         "careers_url": "https://jobs.dopper.com/",
@@ -1147,7 +911,7 @@
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T06:02:28.173Z"
       }
     },
     {
@@ -1156,13 +920,21 @@
       "sector": "Tech / Professional services (Real estate services)",
       "size": "~1000+",
       "description": "Real estate and facilities services firm. Often uses internal recruiters for corporate and client-facing roles.",
-      "careers_url": "https://www.cbre.nl/careers",
+      "careers_url": "https://www.cbreim.com/careers",
       "website": "https://www.cbre.nl/",
       "likely_hiring": true,
       "reasoning": "Appears in Haarlem hiring references; large professional services firm with in-house TA.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "CBRE",
+        "careers_url": "https://www.cbreim.com/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     },
     {
       "name": "Greenyard - Fresh",
@@ -1170,13 +942,21 @@
       "sector": "Consumer brands / FMCG (Food)",
       "size": "~1000+",
       "description": "Fresh produce and food supply chain company. Likely to have internal HR/recruitment for operations and corporate roles.",
-      "careers_url": null,
+      "careers_url": "https://www.greenyard.group/divisions/fresh/careers",
       "website": "https://www.greenyard.com/",
       "likely_hiring": false,
       "reasoning": "Mentioned in Haarlem hiring references, but careers URL not verified.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "Greenyard - Fresh",
+        "careers_url": "https://www.greenyard.group/divisions/fresh/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     },
     {
       "name": "Deel",
@@ -1184,13 +964,30 @@
       "sector": "Tech (HR/Payroll SaaS)",
       "size": "~500-1000",
       "description": "Global HR/payroll platform. Typically hires internal recruiters and talent partners for scaling teams.",
-      "careers_url": "https://www.deel.com/careers",
+      "careers_url": "https://www.deel.com/careers/open-roles/",
       "website": "https://www.deel.com/",
       "likely_hiring": true,
       "reasoning": "Appears in Haarlem hiring references; tech company with strong internal recruiting.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "Deel",
+        "careers_url": "https://www.deel.com/careers/open-roles/",
+        "error": null,
+        "total_roles": 2,
+        "all_roles": [
+          {
+            "title": "Talent Recruiter @ Employ Global - Deel",
+            "url": "https://jobs.deel.com/EmployGlobal/job-details/233d337b-b369-474c-9977-d0174bd28519/overview"
+          },
+          {
+            "title": "Talent Sourcing Associate @ Employ Global - Deel",
+            "url": "https://jobs.deel.com/EmployGlobal/job-details/ca496412-80fc-4dbe-aea7-567e7d3c3911/overview"
+          }
+        ],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     },
     {
       "name": "Airbox Fulfilment",
@@ -1198,13 +995,21 @@
       "sector": "Tech / Logistics (E-commerce fulfilment)",
       "size": "~50-200",
       "description": "E-commerce fulfilment and logistics provider. May use internal recruiters for warehouse and operations plus corporate roles.",
-      "careers_url": null,
+      "careers_url": "https://www.airboxfulfilment.com/careers",
       "website": "https://www.airboxfulfilment.nl/",
       "likely_hiring": false,
       "reasoning": "Appears in Haarlem hiring references; careers URL not verified.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "Airbox Fulfilment",
+        "careers_url": "https://www.airboxfulfilment.com/careers",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     },
     {
       "name": "Nedflex",
@@ -1212,13 +1017,38 @@
       "sector": "Professional services (Staffing/HR)",
       "size": "~50-200",
       "description": "Staffing and HR services company. While recruitment-focused, it may also have internal talent acquisition/people roles.",
-      "careers_url": null,
+      "careers_url": "https://nedflex.nl/vacatures/",
       "website": "https://www.nedflex.nl/",
       "likely_hiring": false,
       "reasoning": "Appears in Haarlem hiring references; careers URL not verified.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "Nedflex",
+        "careers_url": "https://nedflex.nl/vacatures/",
+        "error": null,
+        "total_roles": 2,
+        "all_roles": [
+          {
+            "title": "Recruiter",
+            "url": "https://werkenbij.nedflex.nl/vacatures/recruiter-412313/"
+          },
+          {
+            "title": "Intercedent Geldermalsen (tijdelijk)",
+            "url": "https://nedflex.nl/vacatures/intercedent-geldermalsen-tijdelijk-414395/"
+          }
+        ],
+        "matching_roles": [
+          {
+            "job_title": "Recruiter",
+            "target_role": "Recruiter",
+            "match_strength": "exact",
+            "score": 1,
+            "url": "https://werkenbij.nedflex.nl/vacatures/recruiter-412313/"
+          }
+        ],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     },
     {
       "name": "Royal A-ware",
@@ -1226,14 +1056,22 @@
       "sector": "Consumer brands / FMCG (Food ingredients)",
       "size": "~1000+",
       "description": "Food ingredients and solutions provider. Likely to have internal HR and recruiters for plant and corporate hiring.",
-      "careers_url": null,
+      "careers_url": "https://www.nationalevacaturebank.nl/vacatures/werkgever/royal-a-ware",
       "website": "https://www.a-ware.com/",
       "likely_hiring": false,
       "reasoning": "Appears in Haarlem hiring references; careers URL not verified.",
       "discoveredAt": "2026-04-21T05:49:59.660Z",
-      "lastUpdated": "2026-04-21T05:49:59.660Z",
-      "vacancies": null
+      "lastUpdated": "2026-04-21T06:02:28.174Z",
+      "vacancies": {
+        "company_name": "Royal A-ware",
+        "careers_url": "https://www.nationalevacaturebank.nl/vacatures/werkgever/royal-a-ware",
+        "error": null,
+        "total_roles": 0,
+        "all_roles": [],
+        "matching_roles": [],
+        "checkedAt": "2026-04-21T06:02:28.174Z"
+      }
     }
   ],
-  "lastUpdated": "2026-04-21T05:51:50.393Z"
+  "lastUpdated": "2026-04-21T06:02:28.198Z"
 }
