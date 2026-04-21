@@ -25,14 +25,14 @@
     {
       "name": "Marcel's Green Soap",
       "location": "Haarlem, NL",
-      "sector": "FMCG / Consumer brands",
-      "size": "~200",
-      "description": "Marcel's Green Soap produces and sells sustainable personal care products. Consumer brands with manufacturing and commercial teams commonly maintain internal talent acquisition for growth and seasonal demand.",
-      "careers_url": "https://www.marcelsgreensoap.com/nl/vacatures",
-      "likely_hiring": true,
-      "reasoning": "FMCG brands frequently hire for production, supply chain, and commercial functions; likely active vacancies.",
+      "sector": "FMCG / Consumer brands (home & personal care)",
+      "size": "~15",
+      "description": "Duurzaam consumer brand in schoonmaak- en verzorgingsproducten. Positioneert zich op recycled plastic, biologisch afbreekbare formules en een purpose-driven missie.",
+      "careers_url": "https://marcelsgreensoap.com/pages/vacatures",
+      "likely_hiring": false,
+      "reasoning": "Hoewel er een vacaturespagina is, lijkt de organisatie relatief klein (minder dan 50), waardoor in-house corporate recruitment rollen minder waarschijnlijk zijn.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
       "vacancies": {
         "company_name": "Marcel's Green Soap",
         "careers_url": "https://www.marcelsgreensoap.com/nl/vacatures",
@@ -41,19 +41,20 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://marcelsgreensoap.com/"
     },
     {
       "name": "Gemeente Haarlem",
       "location": "Haarlem, NL",
-      "sector": "Municipality / public sector",
-      "size": "~1000-2000",
-      "description": "The municipality of Haarlem employs a wide range of public-sector staff across policy, operations, and services. Municipalities commonly have internal HR and recruitment functions, including corporate recruiters and talent acquisition roles.",
-      "careers_url": null,
+      "sector": "Municipality / Public sector",
+      "size": "~1,700",
+      "description": "Lokale overheid voor Haarlem en Zandvoort (ambtelijke samenwerking). Werkt met teams op o.a. beleid, dienstverlening en uitvoering.",
+      "careers_url": "https://haarlem.nl/werken-bij-haarlem",
       "likely_hiring": true,
-      "reasoning": "Public-sector employer with recurring recruitment needs and in-house HR/recruitment capacity.",
+      "reasoning": "Gemeenten hebben structureel werving nodig (o.a. beleid, uitvoering en projecten) en publiceren vacatures via de werken-bij site.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
       "vacancies": {
         "company_name": "Gemeente Haarlem",
         "careers_url": "https://werkenbij.haarlem.nl",
@@ -63,19 +64,19 @@
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
       },
-      "website": "https://www.haarlem.nl"
+      "website": "https://haarlem.nl/"
     },
     {
       "name": "Dopper",
-      "location": "Amsterdam, NL",
-      "sector": "Consumer brands (sustainable lifestyle)",
-      "size": "~200",
-      "description": "Dopper designs and sells reusable water bottles and related products. As a consumer brand with growth and hiring needs across commercial, operations, and corporate functions, they typically maintain in-house recruitment support.",
-      "careers_url": null,
+      "location": "Haarlem, NL",
+      "sector": "Consumer brands / FMCG (sustainable drinkware)",
+      "size": "~200-500",
+      "description": "Ontwerper en merk van herbruikbare waterflessen met focus op duurzaamheid en het verminderen van single-use plastic. Combineert productontwikkeling met e-commerce en marketing.",
+      "careers_url": "https://jobs.dopper.com/",
       "likely_hiring": true,
-      "reasoning": "Consumer brand with ongoing corporate and operational hiring; in-house talent acquisition is likely.",
+      "reasoning": "Er is een dedicated careers site met open rollen; een merk met groei/marketing- en productteams heeft doorgaans behoefte aan talent acquisition.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-20T20:11:27.747Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
       "vacancies": {
         "company_name": "Dopper",
         "careers_url": "https://www.dopper.com/nl-nl/pages/careers",
@@ -85,7 +86,7 @@
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
       },
-      "website": "https://www.dopper.com"
+      "website": "https://www.dopper.com/nl"
     },
     {
       "name": "Lidl Nederland",
@@ -390,13 +391,13 @@
       "name": "Gemeente Haarlemmermeer",
       "location": "Hoofddorp, NL",
       "sector": "Municipality / Public sector",
-      "size": "~1,000",
-      "description": "Haarlemmermeer is a large municipality in the Amsterdam region with diverse operational and policy functions. Municipalities typically maintain recruitment/talent acquisition capabilities for ongoing staffing needs.",
-      "careers_url": "https://www.haarlemmermeer.nl/werken-bij",
+      "size": "~1,000-2,000",
+      "description": "Lokale overheid in Haarlemmermeer met sterke aanwezigheid in Hoofddorp en omgeving. Werkt aan dienstverlening, ruimtelijke ontwikkeling en maatschappelijke programma’s.",
+      "careers_url": null,
       "likely_hiring": true,
-      "reasoning": "Large municipality with continuous hiring demand and structured recruitment.",
+      "reasoning": "Publieke sector heeft doorgaans doorlopende instroombehoefte; maar careers URL kon niet worden geverifieerd binnen de uitgevoerde websearch.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
-      "lastUpdated": "2026-04-20T19:55:24.148Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
       "vacancies": {
         "company_name": "Gemeente Haarlemmermeer",
         "careers_url": "https://www.haarlemmermeer.nl/werken-bij",
@@ -405,7 +406,8 @@
         "all_roles": [],
         "matching_roles": [],
         "checkedAt": "2026-04-20T19:55:24.148Z"
-      }
+      },
+      "website": "https://www.haarlemmermeer.nl/"
     },
     {
       "name": "Gemeente Amsterdam",
@@ -525,7 +527,119 @@
       "discoveredAt": "2026-04-20T20:11:27.747Z",
       "lastUpdated": "2026-04-20T20:11:27.747Z",
       "vacancies": null
+    },
+    {
+      "name": "Loods 5",
+      "location": "Halfweg, NL",
+      "sector": "Retail / Consumer goods",
+      "size": "~250-500",
+      "description": "Woonwarenhuis/retailorganisatie met meerdere vestigingen en een online kanaal. Werkt met eigen collecties en een breed assortiment voor consumenten en zakelijke klanten.",
+      "careers_url": "https://www.werkenbijloods5.nl/",
+      "website": "https://loods5.nl/",
+      "likely_hiring": true,
+      "reasoning": "Retailorganisaties met meerdere vestigingen hebben doorgaans doorlopende instroombehoefte; de werken-bij pagina toont openstaande vacatures en een recruitment contact.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "The Schippers Group",
+      "location": "Haarlem, NL",
+      "sector": "Agrifood / Consumer & retail supply chain",
+      "size": "~50-250",
+      "description": "Groep actief in de agrifoodketen met activiteiten rond melkveehouderij en gerelateerde business. Heeft een eigen careers platform voor vacatures.",
+      "careers_url": "https://careers.theschippersgroup.com/",
+      "website": "https://www.theschippersgroup.com/",
+      "likely_hiring": false,
+      "reasoning": "Geen directe indicatie van open recruitmentrollen in de careers portal op basis van de gevonden pagina; wel een dedicated careers omgeving.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Buurts",
+      "location": "Haarlem, NL",
+      "sector": "Municipality-adjacent / Community services",
+      "size": "~50-250",
+      "description": "Organisatie die werkt aan buurtgerichte ondersteuning en samenwerking met lokale partners. Heeft een werken-bij pagina met informatie over vacatures en contactpersonen.",
+      "careers_url": "https://buurts.nl/werken-bij/",
+      "website": "https://buurts.nl/",
+      "likely_hiring": false,
+      "reasoning": "Werken-bij pagina bestaat, maar er is geen directe bevestiging van actuele in-house recruitment vacatures in de gevonden content.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Haarlem & Zandvoort (Werken bij Haarlem)",
+      "location": "Haarlem, NL",
+      "sector": "Municipality / Public sector",
+      "size": "~1,700",
+      "description": "Werken-bij platform voor Haarlem en Zandvoort met vacatures, stages en traineeships. Gericht op maatschappelijke impact en ontwikkeling binnen de organisatie.",
+      "careers_url": "https://haarlem.nl/werken-bij-haarlem",
+      "website": "https://haarlem.nl/",
+      "likely_hiring": true,
+      "reasoning": "Structurele vacaturepublicatie voor publieke functies; relevant voor corporate recruiter/talent partner profielen.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Driessen (Gemeente Haarlem vacatures via partner)",
+      "location": "Utrecht, NL",
+      "sector": "Recruitment / Staffing (public sector placements)",
+      "size": "~500-1,000",
+      "description": "Recruitment- en detacheringsorganisatie die vacatures voor o.a. gemeente Haarlem via haar platform aanbiedt. Niet in-house bij de gemeente, maar wel relevant voor talent acquisition netwerken.",
+      "careers_url": null,
+      "website": "https://www.driessen.nl/",
+      "likely_hiring": false,
+      "reasoning": "De gevonden bron is een vacaturepagina voor gemeente Haarlem via Driessen; in-house corporate recruitment rollen bij Driessen konden niet worden geverifieerd met een careers URL.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Homerun (ATS partner voor Dopper)",
+      "location": "Amsterdam, NL",
+      "sector": "Tech / HR Tech",
+      "size": "~50-250",
+      "description": "HR-tech/ATS platform dat hiring workflows ondersteunt. Dopper gebruikt Homerun, wat het relevant maakt voor talent acquisition tooling en recruitment processen.",
+      "careers_url": null,
+      "website": "https://www.homerun.co/",
+      "likely_hiring": false,
+      "reasoning": "Er is wel context over Dopper en Homerun, maar een geverifieerde careers URL voor Homerun is niet gevonden in de uitgevoerde zoekresultaten.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Gemeente Haarlem (Vacaturespagina)",
+      "location": "Haarlem, NL",
+      "sector": "Municipality / Public sector",
+      "size": "~1,700",
+      "description": "Officiële vacaturespagina voor werken bij Haarlem en Zandvoort. Bevat actuele vacatures en informatie over sollicitatie.",
+      "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+      "website": "https://haarlem.nl/",
+      "likely_hiring": true,
+      "reasoning": "Actuele vacaturepublicatie via de officiële vacaturespagina; gemeenten werven continu.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
+    },
+    {
+      "name": "Dopper (Vacatures / Careers hub)",
+      "location": "Haarlem, NL",
+      "sector": "Consumer brands / FMCG (sustainable drinkware)",
+      "size": "~200-500",
+      "description": "Dopper heeft een centrale vacaturesite voor open rollen. De organisatie richt zich op impact en groei, wat doorgaans talent acquisition activiteiten ondersteunt.",
+      "careers_url": "https://jobs.dopper.com/",
+      "website": "https://www.dopper.com/nl",
+      "likely_hiring": true,
+      "reasoning": "Dedicated jobs portal met open rollen/aanmeldflow; passend bij corporate recruiter/talent acquisition partner profielen.",
+      "discoveredAt": "2026-04-21T05:14:13.154Z",
+      "lastUpdated": "2026-04-21T05:14:13.154Z",
+      "vacancies": null
     }
   ],
-  "lastUpdated": "2026-04-20T20:11:27.747Z"
+  "lastUpdated": "2026-04-21T05:14:13.154Z"
 }
