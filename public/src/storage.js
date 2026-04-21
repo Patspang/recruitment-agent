@@ -10,6 +10,32 @@ class CompanyStorage {
   }
 
   /**
+   * Encode UTF-8 string to Base64 for GitHub Contents API
+   */
+  toBase64Utf8(text) {
+    const bytes = new TextEncoder().encode(text);
+    let binary = '';
+    const chunkSize = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+      const chunk = bytes.subarray(i, i + chunkSize);
+      binary += String.fromCharCode(...chunk);
+    }
+    return btoa(binary);
+  }
+
+  /**
+   * Decode Base64 to UTF-8 string from GitHub Contents API
+   */
+  fromBase64Utf8(base64) {
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    return new TextDecoder().decode(bytes);
+  }
+
+  /**
    * Get GitHub API configuration
    */
   getConfig() {
@@ -62,7 +88,7 @@ class CompanyStorage {
     const data = await response.json();
     this.sha = data.sha;
 
-    const content = JSON.parse(atob(data.content));
+    const content = JSON.parse(this.fromBase64Utf8(data.content));
     return content;
   }
 
@@ -78,7 +104,7 @@ class CompanyStorage {
     }
 
     const jsonString = JSON.stringify(data, null, 2);
-    const content = btoa(jsonString);
+    const content = this.toBase64Utf8(jsonString);
 
     const body = {
       message,

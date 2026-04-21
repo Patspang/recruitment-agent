@@ -46,9 +46,9 @@ class ApiClient {
     try {
       const defaults = config.getDefaults();
       const requestBody = {
-        model: defaults.apiModel || 'gpt-5.4-nano',
+        model: defaults.apiModel || 'gpt-4o-mini',
         input: prompt,
-        max_output_tokens: defaults.apiMaxTokens || 1200,
+        max_output_tokens: defaults.apiMaxTokens || 4000,
         temperature: defaults.apiTemperature ?? 0.2
       };
 

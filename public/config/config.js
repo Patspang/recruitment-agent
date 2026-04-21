@@ -14,7 +14,10 @@ class ConfigManager {
         throw new Error('Failed to load default configuration');
       }
       this.defaults = await response.json();
-      
+
+      // Try loading secrets from config/secrets.json (gitignored, injected at deploy)
+      await this.loadSecrets();
+
       // Try to get API key from environment/localStorage/window
       this.apiKey = this.getApiKey();
       
@@ -24,6 +27,33 @@ class ConfigManager {
     } catch (error) {
       console.error('Configuration initialization error:', error);
       throw error;
+    }
+  }
+
+  /**
+   * Load secrets from config/secrets.json (gitignored).
+   * If found, auto-populate localStorage so prompts don't show.
+   */
+  async loadSecrets() {
+    try {
+      const resp = await fetch('config/secrets.json');
+      if (!resp.ok) return; // file doesn't exist — that's fine
+      const secrets = await resp.json();
+
+      if (secrets.openai_api_key && !localStorage.getItem('openai_api_key')) {
+        localStorage.setItem('openai_api_key', secrets.openai_api_key);
+        console.log('✓ OpenAI key loaded from secrets');
+      }
+      if (secrets.github_token && !localStorage.getItem('github_token')) {
+        localStorage.setItem('github_token', secrets.github_token);
+        console.log('✓ GitHub token loaded from secrets');
+      }
+      if (secrets.tavily_api_key && !localStorage.getItem('tavily_api_key')) {
+        localStorage.setItem('tavily_api_key', secrets.tavily_api_key);
+        console.log('✓ Tavily key loaded from secrets');
+      }
+    } catch {
+      // secrets.json not available — ignore silently
     }
   }
 
@@ -110,6 +140,26 @@ class ConfigManager {
 
   hasGithubToken() {
     return !!this.getGithubToken();
+  }
+
+  getTavilyApiKey() {
+    return localStorage.getItem('tavily_api_key') || null;
+  }
+
+  setTavilyApiKey(key) {
+    if (!key || typeof key !== 'string') {
+      throw new Error('Tavily API key must be a non-empty string');
+    }
+    localStorage.setItem('tavily_api_key', key.trim());
+    return true;
+  }
+
+  clearTavilyApiKey() {
+    localStorage.removeItem('tavily_api_key');
+  }
+
+  hasTavilyApiKey() {
+    return !!this.getTavilyApiKey();
   }
 
   getDefaults() {

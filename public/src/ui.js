@@ -190,7 +190,13 @@ class UIManager {
     const matchingRoles = company.vacancies?.matching_roles;
     if (matchingRoles && Array.isArray(matchingRoles) && matchingRoles.length > 0) {
       const matchSummary = matchingRoles
-        .map(m => `<div style="font-size:10px;padding:4px 6px;background:var(--accent);color:white;border-radius:4px">${this.escapeHtml(m.target_role)}</div>`)
+        .map(m => {
+          const label = this.escapeHtml(m.job_title || m.target_role);
+          if (m.url) {
+            return `<a href="${this.escapeHtml(m.url)}" target="_blank" rel="noopener noreferrer" style="font-size:10px;padding:4px 6px;background:var(--accent);color:white;border-radius:4px;text-decoration:none;display:inline-block">${label} ↗</a>`;
+          }
+          return `<div style="font-size:10px;padding:4px 6px;background:var(--accent);color:white;border-radius:4px">${label}</div>`;
+        })
         .join('');
       vacancySection = `
         <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">

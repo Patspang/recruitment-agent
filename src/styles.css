@@ -613,6 +613,20 @@ body {
   display: block;
 }
 
+/* Tavily API Key Configuration (hidden by default, shown with .visible) */
+#tavily-token-prompt {
+  background: var(--warn-light);
+  border: 1px solid #E8D4C8;
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+#tavily-token-prompt.visible {
+  display: block;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .main {

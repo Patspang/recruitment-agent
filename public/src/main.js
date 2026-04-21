@@ -6,6 +6,7 @@ class AppState {
     this.roles = [];
     this.seeds = [];
     this.location = '';
+    this.radiusKm = 30;
     this.size = '';
     this.sectors = '';
     this.running = false;
@@ -23,6 +24,7 @@ class AppState {
       this.roles = [...defaults.defaultRoles];
       this.seeds = [...defaults.defaultSeeds];
       this.location = defaults.defaultLocation;
+      this.radiusKm = Number(defaults.defaultRadiusKm) || 30;
       this.size = defaults.defaultSize;
       this.sectors = defaults.defaultSectors;
 
@@ -162,16 +164,19 @@ class AppState {
 
   updateConfigFields() {
     const locationField = document.getElementById('cfg-location');
+    const radiusField = document.getElementById('cfg-radius');
     const sizeField = document.getElementById('cfg-size');
     const sectorsField = document.getElementById('cfg-sectors');
 
     if (locationField) locationField.value = this.location;
+    if (radiusField) radiusField.value = String(this.radiusKm);
     if (sizeField) sizeField.value = this.size;
     if (sectorsField) sectorsField.value = this.sectors;
   }
 
   loadConfigFromFields() {
     const locationField = document.getElementById('cfg-location');
+    const radiusField = document.getElementById('cfg-radius');
     const sizeField = document.getElementById('cfg-size');
     const sectorsField = document.getElementById('cfg-sectors');
 
@@ -186,6 +191,14 @@ class AppState {
 
     if (sizeField) {
       this.size = sizeField.value;
+    }
+
+    if (radiusField) {
+      const parsed = Number(radiusField.value);
+      if (!Number.isFinite(parsed) || parsed <= 0) {
+        throw new ValidationError('Radius must be a positive number');
+      }
+      this.radiusKm = parsed;
     }
 
     if (sectorsField) {
@@ -236,21 +249,42 @@ class AppState {
       ui.setStatus('Searching…', true);
 
       ui.log('Starting company discovery agent…', 'ok');
-      ui.log(`Location: ${this.location}`, 'info');
+      ui.log(`Location: ${this.location} (${this.radiusKm} km radius)`, 'info');
       ui.log(`Role titles: ${this.roles.slice(0, 3).join(', ')}…`, 'info');
       ui.log(`Seed companies: ${this.seeds.join(', ')}`, 'info');
 
-      const prompt = this.buildPrompt();
-      const discoveredCompanies = await this.apiClient.discoverCompanies(prompt);
+      // Step 1: Use Tavily to pre-search for company info
+      let searchContext = '';
+      if (tavilySearch.hasApiKey()) {
+        ui.log('Searching the web via Tavily…', 'info');
+        try {
+          const searchResults = await tavilySearch.search(
+            `companies with recruitment jobs near ${this.location} ${this.sectors} ${this.seeds.slice(0, 3).join(' ')}`,
+            { maxResults: 10, depth: 'basic' }
+          );
+          searchContext = searchResults
+            .map(r => `- ${r.title} (${r.url}): ${r.content}`)
+            .join('\n');
+          ui.log(`Found ${searchResults.length} web results for context`, 'ok');
+        } catch (e) {
+          ui.log(`Tavily search failed: ${e.message}. Continuing without web context.`, 'warn');
+        }
+      } else {
+        ui.log('No Tavily key — skipping web search enrichment', 'info');
+      }
 
-      ui.log(`Found ${discoveredCompanies.length} companies`, 'ok');
+      const prompt = this.buildPrompt(searchContext);
+      const discoveredCompanies = await this.apiClient.discoverCompanies(prompt);
+      const dedupedCompanies = this.deduplicateCompanies(discoveredCompanies);
+
+      ui.log(`Found ${dedupedCompanies.length} companies`, 'ok');
 
       // Verify careers URLs are reachable
       ui.log('Verifying careers URLs…', 'info');
-      await this.verifyUrls(discoveredCompanies);
+      await this.verifyUrls(dedupedCompanies);
 
       // Merge with existing companies
-      const allCompanies = await companyStorage.mergeDiscovery(discoveredCompanies);
+      const allCompanies = await companyStorage.mergeDiscovery(dedupedCompanies);
       ui.log(`Total companies in database: ${allCompanies.length}`, 'info');
 
       // Display companies
@@ -286,38 +320,63 @@ class AppState {
     }
   }
 
-  buildPrompt() {
+  buildPrompt(searchContext = '') {
     const targetCount = config.getCompanyCountTarget();
-    return `You are a job search research assistant helping a Senior Recruitment Consultant named Daniëlle find in-house recruitment roles near Haarlem, Netherlands.
+    const webContext = searchContext
+      ? `\n\nWeb search results for reference (use these to verify companies and find careers pages):\n${searchContext}\n`
+      : '';
 
-Her background: Senior Recruitment Consultant specialising in Digital Marketing & Communication at We Know People, based in Haarlem. University of Amsterdam graduate. ~10 years experience in recruitment.
-
-Task: Identify companies that likely have or would have in-house recruitment/talent acquisition roles near Haarlem (within ~30km, covering Amsterdam, Hoofddorp, Amstelveen, Zaandam, IJmuiden area).
+    return `You are a job search research assistant. Identify companies near Haarlem, Netherlands (within ${this.radiusKm}km) that may have in-house recruitment/talent acquisition roles.
 
 Settings:
-- Location focus: ${this.location}
-- Minimum company size: ${this.size}
-- Target sectors: ${this.sectors}
-- Seed companies to include: ${this.seeds.join(', ')}
-- Target role titles she is interested in: ${this.roles.join(', ')}
+- Location: ${this.location} (${this.radiusKm}km radius)
+- Min company size: ${this.size}
+- Sectors: ${this.sectors}
+- Seed companies: ${this.seeds.join(', ')}
+- Target roles: ${this.roles.join(', ')}
+${webContext}
+Return a JSON array of ${targetCount} companies. Each object:
+{"name":"…","location":"City, NL","sector":"…","size":"~N","description":"1-2 sentences","careers_url":"verified URL or null","website":"main site URL","likely_hiring":true/false,"reasoning":"brief"}
 
-Return a JSON array of ${targetCount} companies. For each company include:
-{
-  "name": "Company name",
-  "location": "City, NL",
-  "sector": "Sector",
-  "size": "Approximate headcount e.g. ~500",
-  "description": "1-2 sentence description of what they do and why they might have in-house recruitment",
-  "careers_url": "The company's actual careers/jobs page URL — only include if you are confident it exists. Use the pattern https://www.<domain>/careers or /jobs or /werken-bij. If unsure, set to null.",
-  "website": "The company's main website URL",
-  "likely_hiring": true or false (your assessment of whether they likely have relevant open roles now),
-  "reasoning": "Brief reason for likely_hiring assessment"
-}
+Rules:
+- Include ALL seed companies (${this.seeds.join(', ')}).
+- careers_url must be a real URL from the web search results or your knowledge. Set null if unsure.
+- Return ONLY valid JSON array.`;
+  }
 
-IMPORTANT:
-- Include ALL the seed companies (${this.seeds.join(', ')}) in the list.
-- For careers_url: ONLY provide URLs you are confident actually exist. Do NOT fabricate or guess URLs. Use null if unsure.
-- Return ONLY valid JSON array, no markdown, no explanation.`;
+  deduplicateCompanies(companies) {
+    if (!Array.isArray(companies)) return [];
+
+    const normalizeName = (name) => String(name || '')
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+
+    const byName = new Map();
+    for (const company of companies) {
+      const key = normalizeName(company?.name);
+      if (!key) continue;
+
+      const existing = byName.get(key);
+      if (!existing) {
+        byName.set(key, company);
+        continue;
+      }
+
+      const existingHasCareers = !!existing.careers_url;
+      const candidateHasCareers = !!company.careers_url;
+      if (!existingHasCareers && candidateHasCareers) {
+        byName.set(key, company);
+      }
+    }
+
+    const deduped = Array.from(byName.values());
+    const removed = companies.length - deduped.length;
+    if (removed > 0) {
+      ui.log(`Deduplicated ${removed} duplicate companies`, 'info');
+    }
+    return deduped;
   }
 
   /**
@@ -351,6 +410,7 @@ IMPORTANT:
         roles: this.roles,
         seeds: this.seeds,
         location: this.location,
+        radiusKm: this.radiusKm,
         size: this.size,
         sectors: this.sectors
       };
@@ -368,6 +428,7 @@ IMPORTANT:
         if (state.roles && Array.isArray(state.roles)) this.roles = state.roles;
         if (state.seeds && Array.isArray(state.seeds)) this.seeds = state.seeds;
         if (state.location) this.location = state.location;
+        if (state.radiusKm) this.radiusKm = Number(state.radiusKm) || this.radiusKm;
         if (state.size) this.size = state.size;
         if (state.sectors) this.sectors = state.sectors;
         ui.log('Loaded saved configuration', 'info');

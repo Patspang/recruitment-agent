@@ -180,6 +180,25 @@
       </div>
     </div>
 
+    <!-- Tavily API Key Configuration -->
+    <div id="tavily-token-prompt">
+      <label class="api-key-label">Tavily API Key (web search)</label>
+      <input 
+        type="password" 
+        class="api-key-input" 
+        id="tavily-token-input" 
+        placeholder="Enter your Tavily API key"
+        autocomplete="off"
+      />
+      <div class="api-key-actions">
+        <button class="api-key-button" onclick="configureTavilyToken()">Configure</button>
+        <button class="api-key-button secondary" onclick="clearConfiguredTavilyToken()">Clear stored key</button>
+      </div>
+      <div class="api-key-help">
+        Get a free key at <a href="https://app.tavily.com" target="_blank" style="color: var(--warn);">app.tavily.com</a> (1000 searches/mo free)
+      </div>
+    </div>
+
     <div class="section-label">Target role titles</div>
     <div class="tags-wrap" id="roles-wrap"></div>
     <div class="tag-add-row">
@@ -198,6 +217,16 @@
     <div class="config-row">
       <label class="config-label">Location focus</label>
       <input class="config-input" id="cfg-location" />
+    </div>
+    <div class="config-row">
+      <label class="config-label">Radius</label>
+      <select class="config-select" id="cfg-radius">
+        <option value="10">10 km</option>
+        <option value="20">20 km</option>
+        <option value="30" selected>30 km</option>
+        <option value="40">40 km</option>
+        <option value="50">50 km</option>
+      </select>
     </div>
     <div class="config-row">
       <label class="config-label">Min. company size</label>
@@ -233,6 +262,7 @@
 <script src="config/config.js"></script>
 <script src="src/validation.js"></script>
 <script src="src/fuzzy-match.js"></script>
+<script src="src/tavily.js"></script>
 <script src="src/storage.js"></script>
 <script src="src/api.js"></script>
 <script src="src/vacancies.js"></script>
@@ -293,6 +323,36 @@ function clearConfiguredGithubToken() {
   }
 }
 
+function configureTavilyToken() {
+  const input = document.getElementById('tavily-token-input');
+  if (!input || !input.value.trim()) {
+    ui.log('Tavily API key cannot be empty', 'err');
+    return;
+  }
+  try {
+    config.setTavilyApiKey(input.value.trim());
+    input.value = '';
+    ui.log('Tavily API key configured successfully.', 'ok');
+    const prompt = document.getElementById('tavily-token-prompt');
+    if (prompt) setTimeout(() => prompt.classList.remove('visible'), 500);
+  } catch (error) {
+    ui.log(`Failed to configure Tavily key: ${error.message}`, 'err');
+  }
+}
+
+function clearConfiguredTavilyToken() {
+  if (!config) return;
+  try {
+    config.clearTavilyApiKey();
+    document.getElementById('tavily-token-input').value = '';
+    ui.log('Tavily API key cleared.', 'info');
+    const prompt = document.getElementById('tavily-token-prompt');
+    if (prompt) prompt.classList.add('visible');
+  } catch (error) {
+    ui.log(`Failed to clear Tavily key: ${error.message}`, 'err');
+  }
+}
+
 // Show prompts if needed and add event listeners
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
@@ -330,6 +390,25 @@ document.addEventListener('DOMContentLoaded', () => {
       apiKeyInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
           configureApiKey();
+        }
+      });
+    }
+
+    // Handle Tavily API key prompt
+    const tavilyPrompt = document.getElementById('tavily-token-prompt');
+    if (!config.hasTavilyApiKey()) {
+      if (tavilyPrompt) tavilyPrompt.classList.add('visible');
+    } else {
+      if (tavilyPrompt) tavilyPrompt.classList.remove('visible');
+      console.log('✓ Tavily API key found in storage');
+    }
+
+    // Add Enter key support for Tavily token input
+    const tavilyTokenInput = document.getElementById('tavily-token-input');
+    if (tavilyTokenInput) {
+      tavilyTokenInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          configureTavilyToken();
         }
       });
     }

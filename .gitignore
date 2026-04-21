@@ -3,6 +3,11 @@
 .env.local
 .env.*.local
 
+# Secrets (API keys injected at runtime)
+**/secrets.json
+config/secrets.json
+public/config/secrets.json
+
 # Dependencies
 node_modules/
 
