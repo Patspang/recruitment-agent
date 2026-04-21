@@ -688,7 +688,7 @@
       "likely_hiring": false,
       "reasoning": "Werken-bij pagina bestaat, maar er is geen directe bevestiging van actuele in-house recruitment vacatures in de gevonden content.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T06:42:52.584Z",
+      "lastUpdated": "2026-04-21T06:46:03.368Z",
       "vacancies": {
         "company_name": "Buurts",
         "careers_url": "https://buurts.nl/werken-bij/",
@@ -696,7 +696,7 @@
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T06:42:52.584Z"
+        "checkedAt": "2026-04-21T06:46:03.368Z"
       }
     },
     {
@@ -1140,5 +1140,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-04-21T06:42:52.636Z"
+  "lastUpdated": "2026-04-21T06:46:03.368Z"
 }
