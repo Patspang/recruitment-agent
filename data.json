@@ -6,7 +6,7 @@
       "sector": "Consumer brands / Retail",
       "size": "~200-500",
       "description": "Home and lifestyle retailer with logistics and corporate functions. Typically maintains internal HR/recruitment for store and HQ hiring.",
-      "careers_url": "https://www.loods5.nl/pages/vacatures",
+      "careers_url": "https://www.glassdoor.com/Jobs/Loods-5-Jobs-E4685861.htm",
       "likely_hiring": true,
       "reasoning": "Seed company; retail organization commonly hires recruiters/HR for internal talent acquisition.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -28,7 +28,7 @@
       "sector": "FMCG / Consumer brands (home & personal care)",
       "size": "~15",
       "description": "Duurzaam consumer brand in schoonmaak- en verzorgingsproducten. Positioneert zich op recycled plastic, biologisch afbreekbare formules en een purpose-driven missie.",
-      "careers_url": "https://marcelsgreensoap.com/pages/vacatures",
+      "careers_url": "https://peopleselect.nl/vacatures/duurzaamheid-innovatie-manager-marcels-green-soap/",
       "likely_hiring": false,
       "reasoning": "Hoewel er een vacaturespagina is, lijkt de organisatie relatief klein (minder dan 50), waardoor in-house corporate recruitment rollen minder waarschijnlijk zijn.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -55,7 +55,7 @@
       "sector": "Municipality / Public sector",
       "size": "~1,700",
       "description": "Lokale overheid voor Haarlem en Zandvoort (ambtelijke samenwerking). Werkt met teams op o.a. beleid, dienstverlening en uitvoering.",
-      "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+      "careers_url": "https://haarlem.nl/werken-bij-haarlem",
       "likely_hiring": true,
       "reasoning": "Gemeenten hebben structureel werving nodig (o.a. beleid, uitvoering en projecten) en publiceren vacatures via de werken-bij site.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -150,7 +150,7 @@
       "sector": "Consumer brands / FMCG",
       "size": "~200-500",
       "description": "Sustainable consumer brand (water bottles). Likely to hire internal recruiters/talent partners for growth and corporate functions.",
-      "careers_url": "https://www.dopper.com/pages/careers",
+      "careers_url": "https://nl.linkedin.com/jobs/dopper-jobs",
       "likely_hiring": true,
       "reasoning": "Seed company; consumer brand with ongoing hiring needs and internal People/Recruitment roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -172,7 +172,7 @@
       "sector": "FMCG / Retail",
       "size": "~10,000",
       "description": "Lidl operates supermarkets across the Netherlands and employs large numbers of store and corporate staff. With high-volume hiring, they often use in-house talent acquisition teams and corporate recruiters.",
-      "careers_url": "https://www.werkenbijlidl.nl/",
+      "careers_url": "https://www.youngcapital.nl/werken-bij/lidl-vacatures",
       "likely_hiring": true,
       "reasoning": "Large retailer with continuous recruitment needs across stores and corporate functions.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -193,7 +193,7 @@
       "sector": "FMCG / Retail",
       "size": "~20000",
       "description": "Albert Heijn is a major Dutch grocery retailer and part of Ahold Delhaize. Their scale and constant store/distribution needs make in-house recruitment and talent acquisition highly likely.",
-      "careers_url": "https://werk.ah.nl/",
+      "careers_url": "https://werk.ah.nl/vacatures/tussenjaar-kom-werken-bij-albert-heijn-meeuwenweg-kampen-78504891/",
       "likely_hiring": true,
       "reasoning": "Grocery retail and logistics require ongoing recruitment; careers platform indicates active roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -214,7 +214,7 @@
       "sector": "FMCG / Retail (Corporate)",
       "size": "~20000",
       "description": "Ahold Delhaize is the parent company behind multiple retail brands, with corporate functions supporting strategy, tech, and operations. Corporate hiring typically involves internal recruiters and talent acquisition partners.",
-      "careers_url": "https://careers.aholddelhaize.com/",
+      "careers_url": "https://aholddelhaize.com/careers/",
       "likely_hiring": true,
       "reasoning": "Corporate functions and tech/operations hiring are typically continuous at this scale.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -235,7 +235,7 @@
       "sector": "Tech-enabled retail / Consumer electronics",
       "size": "~5,000",
       "description": "Coolblue is a fast-growing e-commerce and retail company for consumer electronics and related services. Their growth model typically relies on strong internal talent acquisition and recruiter roles.",
-      "careers_url": "https://www.coolblue.nl/vacatures",
+      "careers_url": "https://www.coolblue.nl/vacatures/zoeken?srsltid=AfmBOorLDZvGdnYYQe7rgbe8gXftvVjapxjJFJaf545vl80qzMPoAv68",
       "likely_hiring": true,
       "reasoning": "Rapid growth and frequent vacancies make relevant in-house TA roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -333,7 +333,7 @@
       "sector": "Tech / travel platform",
       "size": "~10000+",
       "description": "Booking.com is a global travel platform and technology company. Tech companies at this scale commonly have internal recruiters and talent acquisition teams for engineering, product, and corporate roles.",
-      "careers_url": null,
+      "careers_url": "https://careers.booking.com/",
       "likely_hiring": true,
       "reasoning": "Large tech employer with ongoing hiring and dedicated internal recruitment.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -355,7 +355,7 @@
       "sector": "Tech (location & mapping)",
       "size": "~1000-2000",
       "description": "TomTom develops location and mapping technologies. Such companies typically run in-house talent acquisition for technical and corporate roles.",
-      "careers_url": null,
+      "careers_url": "https://www.tomtom.com/careers/joboverview/",
       "likely_hiring": true,
       "reasoning": "Tech employer with structured TA and likely recruiter/talent partner roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -377,7 +377,7 @@
       "sector": "Banking / financial services",
       "size": "~50000+",
       "description": "ING is a large financial institution with extensive corporate and technology hiring needs. Banks typically maintain dedicated in-house talent acquisition teams for recruiters and talent partners.",
-      "careers_url": null,
+      "careers_url": "https://careers.ing.com/en/search-jobs/Netherlands/2618/2/2750405/52x25/5x75/50/2",
       "likely_hiring": true,
       "reasoning": "Large employer with frequent openings and established internal TA/recruiter roles.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -399,7 +399,7 @@
       "sector": "FMCG (beverages)",
       "size": "~5000+",
       "description": "Heineken is a global brewer and FMCG beverage company. Large FMCG employers typically have in-house talent acquisition teams supporting corporate and operational hiring.",
-      "careers_url": null,
+      "careers_url": "https://careers.theheinekencompany.com/",
       "likely_hiring": true,
       "reasoning": "Large FMCG employer with ongoing recruitment and internal TA capacity.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -421,7 +421,7 @@
       "sector": "Consumer electronics / Retail",
       "size": "~5,000",
       "description": "MediaMarktSaturn operates consumer electronics retail stores and e-commerce. Retail groups of this size usually run in-house talent acquisition for store, logistics, and corporate roles.",
-      "careers_url": "https://careers.mediamarktsaturn.com/",
+      "careers_url": "https://careers.mediamarktsaturn.com/MediaMarktBE/search/?locale=nl_NL",
       "likely_hiring": false,
       "reasoning": "Likely to have TA capacity, but specific recruiter openings may be less predictable; assessment is slightly conservative.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -500,7 +500,7 @@
       "sector": "Municipality / Public Sector",
       "size": "~1000",
       "description": "Amstelveen is a municipality employing professionals across social services, administration, and operational departments. Municipalities usually run ongoing recruitment via internal HR and talent acquisition partners.",
-      "careers_url": "https://werkenvoor.amstelveen.nl/vacatures",
+      "careers_url": "https://nl.linkedin.com/company/gemeente-amstelveen/jobs",
       "likely_hiring": true,
       "reasoning": "Municipal hiring is typically continuous due to service and staffing requirements.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -562,7 +562,7 @@
       "sector": "Retail / FMCG",
       "size": "~50000+",
       "description": "Albert Heijn is a major Dutch grocery retailer within Ahold Delhaize. Retail at this scale requires continuous hiring across stores, logistics, and corporate functions, typically supported by internal recruitment teams.",
-      "careers_url": null,
+      "careers_url": "https://werk.ah.nl/vacatures/bedrijfsonderdeel/hoofdkantoor",
       "likely_hiring": true,
       "reasoning": "High-volume employer with structured recruitment processes and likely internal recruiters.",
       "discoveredAt": "2026-04-20T19:54:25.604Z",
@@ -584,7 +584,7 @@
       "sector": "Fintech / Tech",
       "size": "~2,500",
       "description": "Adyen provides payment services for merchants worldwide. As a tech/fintech scale-up, they commonly employ internal recruiters and talent partners for specialized hiring.",
-      "careers_url": "https://careers.adyen.com/",
+      "careers_url": "https://job-boards.greenhouse.io/adyen/jobs/7077102",
       "likely_hiring": true,
       "reasoning": "Fintech growth and frequent hiring for corporate and technical roles.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
@@ -605,7 +605,7 @@
       "sector": "Municipality / Public sector",
       "size": "~500",
       "description": "The municipality of Zandvoort employs staff across local services and administration. Municipalities often use internal recruitment processes and may hire talent acquisition/recruitment professionals.",
-      "careers_url": "https://haarlem.nl/werkenbij/vacatures",
+      "careers_url": "https://zandvoort.nl/werken-bij-zandvoort",
       "likely_hiring": false,
       "reasoning": "Public-sector hiring is possible, but openings for senior TA/recruiter roles may be intermittent.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
@@ -675,7 +675,7 @@
       "sector": "Municipality / Public sector",
       "size": "~1,000-2,000",
       "description": "Lokale overheid in Haarlemmermeer met sterke aanwezigheid in Hoofddorp en omgeving. Werkt aan dienstverlening, ruimtelijke ontwikkeling en maatschappelijke programma’s.",
-      "careers_url": null,
+      "careers_url": "https://haarlemmermeergemeente.nl/werken-bij-gemeente-haarlemmermeer",
       "likely_hiring": true,
       "reasoning": "Publieke sector heeft doorgaans doorlopende instroombehoefte; maar careers URL kon niet worden geverifieerd binnen de uitgevoerde websearch.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
@@ -697,7 +697,7 @@
       "sector": "Municipality / Public sector",
       "size": "~20,000",
       "description": "The City of Amsterdam employs a broad workforce across public services, policy, and operations. Large municipalities commonly have internal recruitment and talent partner roles.",
-      "careers_url": "https://werken.amsterdam.nl",
+      "careers_url": "https://www.randstad.nl/werknemers/vacatures/topwerkgevers/gemeente-amsterdam",
       "likely_hiring": true,
       "reasoning": "High hiring volume and established internal recruitment/talent acquisition teams.",
       "discoveredAt": "2026-04-20T19:54:25.605Z",
@@ -718,7 +718,7 @@
       "sector": "Consumer brands / FMCG",
       "size": "~50-200",
       "description": "Natural soap and home fragrance brand. May use in-house recruiters for corporate and operations roles.",
-      "careers_url": null,
+      "careers_url": "https://peopleselect.nl/vacatures/duurzaamheid-innovatie-manager-marcels-green-soap/",
       "website": "https://www.marcelsgreen.com/",
       "likely_hiring": false,
       "reasoning": "Seed company included; careers URL not confidently verified.",
@@ -732,7 +732,7 @@
       "sector": "Municipality / Utilities (Water)",
       "size": "~1000+",
       "description": "Water company (PWN) serving the region. Large employer with structured HR and internal recruitment/talent acquisition.",
-      "careers_url": "https://www.pwn.nl/werken-bij-pwn/",
+      "careers_url": "https://career.jobbird.com/nl/werken-bij/pwn",
       "website": "https://www.pwn.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; large utilities provider with dedicated HR/recruitment teams.",
@@ -746,7 +746,7 @@
       "sector": "Healthcare / Social services",
       "size": "~1000+",
       "description": "Healthcare organization in the Kennemerland region. Likely to have internal recruiters and People & Culture roles due to continuous staffing needs.",
-      "careers_url": "https://www.kennemerhart.nl/werken-bij/",
+      "careers_url": "https://career.jobbird.com/nl/werken-bij/kennemerhart",
       "website": "https://www.kennemerhart.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; large healthcare provider with ongoing recruitment.",
@@ -942,69 +942,20 @@
       "sector": "Municipality-adjacent / Community services",
       "size": "~50-250",
       "description": "Organisatie die werkt aan buurtgerichte ondersteuning en samenwerking met lokale partners. Heeft een werken-bij pagina met informatie over vacatures en contactpersonen.",
-      "careers_url": "https://buurts.nl/werken-bij/",
+      "careers_url": "https://www.bijbuurt.nl/vacatures/",
       "website": "https://buurts.nl/",
       "likely_hiring": false,
       "reasoning": "Werken-bij pagina bestaat, maar er is geen directe bevestiging van actuele in-house recruitment vacatures in de gevonden content.",
       "discoveredAt": "2026-04-21T05:14:13.154Z",
-      "lastUpdated": "2026-04-21T05:19:05.052Z",
+      "lastUpdated": "2026-04-21T05:51:50.393Z",
       "vacancies": {
         "company_name": "Buurts",
-        "careers_url": "https://buurts.nl/werken-bij/",
+        "careers_url": "https://www.bijbuurt.nl/vacatures/",
         "error": null,
-        "total_roles": 12,
-        "all_roles": [
-          {
-            "title": "Wijkgeneralist Haarlem Noord",
-            "url": "https://buurts.nl/vacatures/wijkgeneralist-noord-midden/"
-          },
-          {
-            "title": "Wijkgeneralist Haarlem Noord",
-            "url": "https://buurts.nl/vacatures/wijkgeneralist-noord-midden"
-          },
-          {
-            "title": "Wijkgeneralist Haarlem Noord",
-            "url": "https://buurts.nl/vacatures/wijkgeneralist-noord-midden"
-          },
-          {
-            "title": "Wijkopbouwwerker \"Zachte Landing\"",
-            "url": "https://www.buurts.nl/vacatures/wijkopbouwwerker-zachte-landing"
-          },
-          {
-            "title": "Sociaal werker toegang",
-            "url": "https://buurts.nl/vacatures/sociaal-werker-toegang/"
-          },
-          {
-            "title": "Activiteitenbegeleider Meerwijk",
-            "url": "https://www.buurts.nl/vacatures/activiteitenbegeleider-meerwijk"
-          },
-          {
-            "title": "Integraal Teamleider",
-            "url": "https://buurts.nl/vacatures/integraal-teamleider/"
-          },
-          {
-            "title": "Wijkgeneralist Boerhaavewijk",
-            "url": "https://buurts.nl/vacatures/wijkgeneralist-boerhaavewijk/"
-          },
-          {
-            "title": "Wijkgeneralist Meerwijk",
-            "url": "https://www.buurts.nl/vacatures/wijkgeneralist-meerwijk"
-          },
-          {
-            "title": "Wijkgeneralist Centrum-Rozenprieel",
-            "url": "https://www.buurts.nl/vacatures/wijkgeneralist-centrum-rozenprieel"
-          },
-          {
-            "title": "Wijkgeneralist Parkwijk/Zuiderpolder",
-            "url": "https://www.buurts.nl/vacatures/wijkgeneralist-parkwijkzuiderpolder"
-          },
-          {
-            "title": "Wijkgeneralist Zuidwest",
-            "url": "https://www.buurts.nl/vacatures/wijkgeneralist-zuidwest"
-          }
-        ],
+        "total_roles": 0,
+        "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T05:19:05.052Z"
+        "checkedAt": "2026-04-21T05:51:50.393Z"
       }
     },
     {
@@ -1284,5 +1235,5 @@
       "vacancies": null
     }
   ],
-  "lastUpdated": "2026-04-21T05:49:59.660Z"
+  "lastUpdated": "2026-04-21T05:51:50.393Z"
 }
