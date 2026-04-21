@@ -50,19 +50,19 @@
       "sector": "Municipality / Public sector",
       "size": "~1,700",
       "description": "Lokale overheid voor Haarlem en Zandvoort (ambtelijke samenwerking). Werkt met teams op o.a. beleid, dienstverlening en uitvoering.",
-      "careers_url": "https://www.youngcapital.nl/werken-bij/gemeente-haarlem-vacatures",
+      "careers_url": "https://haarlem.nl/werkenbij/vacatures",
       "likely_hiring": true,
       "reasoning": "Gemeenten hebben structureel werving nodig (o.a. beleid, uitvoering en projecten) en publiceren vacatures via de werken-bij site.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T06:42:52.583Z",
+      "lastUpdated": "2026-04-21T06:48:27.084Z",
       "vacancies": {
         "company_name": "Gemeente Haarlem",
-        "careers_url": "https://www.youngcapital.nl/werken-bij/gemeente-haarlem-vacatures",
+        "careers_url": "https://haarlem.nl/werkenbij/vacatures",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T06:42:52.583Z"
+        "checkedAt": "2026-04-21T06:48:27.084Z"
       },
       "website": "https://haarlem.nl/"
     },
@@ -1140,5 +1140,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-04-21T06:46:03.368Z"
+  "lastUpdated": "2026-04-21T06:48:27.084Z"
 }
