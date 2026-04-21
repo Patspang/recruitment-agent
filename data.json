@@ -678,7 +678,7 @@
       "likely_hiring": false,
       "reasoning": "Seed company included; careers URL not confidently verified.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T06:02:28.173Z",
+      "lastUpdated": "2026-04-21T06:02:58.165Z",
       "vacancies": {
         "company_name": "Intos",
         "careers_url": "https://intos.nl/werken-bij/",
@@ -686,7 +686,7 @@
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T06:02:28.173Z"
+        "checkedAt": "2026-04-21T06:02:58.165Z"
       }
     },
     {
@@ -1073,5 +1073,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-04-21T06:02:28.198Z"
+  "lastUpdated": "2026-04-21T06:02:58.165Z"
 }
