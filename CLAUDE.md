@@ -82,8 +82,14 @@ config.js → validation.js → fuzzy-match.js → tavily.js → storage.js → 
 
 ---
 
+## Workflow
+
+- Always test locally before committing: `python3 -m http.server 8001 -d public`
+- Only commit and push after the user has verified the change works locally
+
 ## What not to do
 
+- Don't commit or push without local testing first
 - Don't add a build system or bundler — the whole point is zero build complexity
 - Don't use `web_search_preview` tool in OpenAI calls — token cost is prohibitive
 - Don't simplify the Tavily domain-scoring logic — it exists for a reason

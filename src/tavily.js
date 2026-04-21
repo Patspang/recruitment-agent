@@ -137,18 +137,45 @@ class TavilySearch {
    */
   async searchJobListings(careersUrl, companyName, targetRoles) {
     const roleQuery = targetRoles.slice(0, 3).join(' OR ');
-    const domain = (() => {
-      try { return new URL(careersUrl).hostname; } catch { return ''; }
-    })();
 
-    // Search 1: target roles on the company's domain
-    const results = await this.search(
+    // Extract root domain (e.g. "buurts.nl" from "vacatures.buurts.nl")
+    // so we also find results on subdomains like vacatures.buurts.nl
+    const getRootDomain = (url) => {
+      try {
+        const parts = new URL(url).hostname.replace('www.', '').split('.');
+        return parts.length >= 2 ? parts.slice(-2).join('.') : parts.join('.');
+      } catch { return ''; }
+    };
+
+    const rootDomain = getRootDomain(careersUrl);
+
+    // Search 1: target roles scoped to root domain (catches subdomains too)
+    let results = await this.search(
       `${companyName} ${roleQuery} vacature`,
       {
         maxResults: 8,
-        includeDomains: domain ? [domain] : undefined
+        depth: 'advanced',
+        includeDomains: rootDomain ? [rootDomain] : undefined
       }
     );
+
+    // Search 2: if domain-scoped search found little, try broader search
+    if (results.length < 3) {
+      const broader = await this.search(
+        `"${companyName}" vacature ${roleQuery}`,
+        { maxResults: 5 }
+      );
+      // Only add results whose domain matches the company
+      const nameSlug = companyName.toLowerCase().replace(/[^a-z0-9]/g, '');
+      for (const r of broader) {
+        const host = getRootDomain(r.url).replace(/[^a-z0-9]/g, '');
+        if (host.includes(nameSlug) || nameSlug.includes(host.replace(/\./g, ''))) {
+          if (!results.some(existing => existing.url === r.url)) {
+            results.push(r);
+          }
+        }
+      }
+    }
 
     return results;
   }
