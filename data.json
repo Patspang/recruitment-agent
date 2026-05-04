@@ -162,32 +162,43 @@
       "sector": "Tech-enabled retail / Consumer electronics",
       "size": "~5,000",
       "description": "Coolblue is a fast-growing e-commerce and retail company for consumer electronics and related services. Their growth model typically relies on strong internal talent acquisition and recruiter roles.",
-      "careers_url": "https://www.coolblue.nl/vacatures/zoeken?srsltid=AfmBOoos2hDDwYxOPWoKpsTxFDIfxg8qyGH3TEgHC5YHmUvBEi-A4ecb",
+      "careers_url": "https://www.coolblue.nl/vacatures?srsltid=AfmBOoquf1CI4cQhZ2JZn1J4FlzBI3OpvgBvrxQw0KpTl5PfzjSdBX97",
       "likely_hiring": true,
       "reasoning": "Rapid growth and frequent vacancies make relevant in-house TA roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-04-21T06:42:52.583Z",
+      "lastUpdated": "2026-05-04T19:53:33.501Z",
       "vacancies": {
         "company_name": "Coolblue",
-        "careers_url": "https://www.coolblue.nl/vacatures/zoeken?srsltid=AfmBOoos2hDDwYxOPWoKpsTxFDIfxg8qyGH3TEgHC5YHmUvBEi-A4ecb",
+        "careers_url": "https://www.coolblue.nl/vacatures?srsltid=AfmBOoquf1CI4cQhZ2JZn1J4FlzBI3OpvgBvrxQw0KpTl5PfzjSdBX97",
         "error": null,
-        "total_roles": 1,
+        "total_roles": 2,
         "all_roles": [
           {
             "title": "Talent Sourcer",
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOopVeG8XZELBr4X6Mbv6D0J9JT1PwweDXhB_iitOEusyk4u5WbgS"
+            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOoqBBIZJjSi1DvgnrGIs4eiI42bSJDz26m2H1AENgSI-Z_GJ2DTq"
+          },
+          {
+            "title": "Recruiter",
+            "url": "https://www.coolblue.nl/vacatures/kantoor?srsltid=AfmBOopAOE8IuD5qbt-EyG1K-cEG5AO2RHzc7u3vCCHQpg4ZXY75ivGD"
           }
         ],
         "matching_roles": [
+          {
+            "job_title": "Recruiter",
+            "target_role": "Recruiter",
+            "match_strength": "exact",
+            "score": 1,
+            "url": "https://www.coolblue.nl/vacatures/kantoor?srsltid=AfmBOopAOE8IuD5qbt-EyG1K-cEG5AO2RHzc7u3vCCHQpg4ZXY75ivGD"
+          },
           {
             "job_title": "Talent Sourcer",
             "target_role": "Talent Partner",
             "match_strength": "partial",
             "score": 0.5571428571428572,
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOopVeG8XZELBr4X6Mbv6D0J9JT1PwweDXhB_iitOEusyk4u5WbgS"
+            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOoqBBIZJjSi1DvgnrGIs4eiI42bSJDz26m2H1AENgSI-Z_GJ2DTq"
           }
         ],
-        "checkedAt": "2026-04-21T06:42:52.583Z"
+        "checkedAt": "2026-05-04T19:53:33.501Z"
       }
     },
     {
@@ -1140,5 +1151,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-05-04T19:53:20.133Z"
+  "lastUpdated": "2026-05-04T19:53:33.501Z"
 }
