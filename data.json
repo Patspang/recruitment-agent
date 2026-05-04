@@ -518,20 +518,20 @@
       "sector": "Municipality / Utilities (Water)",
       "size": "~500-1000",
       "description": "Water company (PWN) serving the region. As a larger utility, it commonly has dedicated corporate recruitment and HR talent teams.",
-      "careers_url": "https://career.jobbird.com/nl/werken-bij/pwn",
+      "careers_url": "https://werkenbij.pwn.nl/vacatures",
       "website": "https://www.pwn.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; larger organization with structured internal recruitment.",
       "discoveredAt": "2026-04-20T20:11:27.747Z",
-      "lastUpdated": "2026-04-21T06:42:52.583Z",
+      "lastUpdated": "2026-05-04T19:55:25.495Z",
       "vacancies": {
         "company_name": "PWN",
-        "careers_url": "https://career.jobbird.com/nl/werken-bij/pwn",
+        "careers_url": "https://werkenbij.pwn.nl/vacatures",
         "error": null,
         "total_roles": 0,
         "all_roles": [],
         "matching_roles": [],
-        "checkedAt": "2026-04-21T06:42:52.583Z"
+        "checkedAt": "2026-05-04T19:55:25.495Z"
       }
     },
     {
@@ -1151,5 +1151,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-05-04T19:53:33.501Z"
+  "lastUpdated": "2026-05-04T19:55:25.495Z"
 }
