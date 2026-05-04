@@ -6,7 +6,7 @@
       "sector": "Consumer brands / Retail",
       "size": "~200-500",
       "description": "Home & lifestyle retailer with multiple locations. Usually has internal Talent Acquisition/HR for store and corporate hiring.",
-      "careers_url": null,
+      "careers_url": "https://nl.linkedin.com/jobs/loods-5-jobs",
       "likely_hiring": true,
       "reasoning": "Seed company; retail organizations commonly staff in-house recruitment.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -72,7 +72,7 @@
       "sector": "Consumer brands / FMCG",
       "size": "~50-200",
       "description": "Sustainable consumer brand (reusable bottles). Likely to have in-house People & Culture and recruiting for corporate and operations roles.",
-      "careers_url": null,
+      "careers_url": "https://jobs.dopper.com/?lang=nl",
       "likely_hiring": true,
       "reasoning": "Seed company; consumer brand with ongoing hiring needs as it scales.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
@@ -171,7 +171,7 @@
       "likely_hiring": true,
       "reasoning": "Rapid growth and frequent vacancies make relevant in-house TA roles likely.",
       "discoveredAt": "2026-04-20T19:51:02.369Z",
-      "lastUpdated": "2026-05-04T20:08:41.849Z",
+      "lastUpdated": "2026-05-04T20:12:55.233Z",
       "vacancies": {
         "company_name": "Coolblue",
         "careers_url": "https://www.coolblue.nl/vacatures?srsltid=AfmBOoquf1CI4cQhZ2JZn1J4FlzBI3OpvgBvrxQw0KpTl5PfzjSdBX97",
@@ -180,23 +180,30 @@
         "all_roles": [
           {
             "title": "Talent Sourcer",
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOoqBBIZJjSi1DvgnrGIs4eiI42bSJDz26m2H1AENgSI-Z_GJ2DTq"
+            "url": "https://www.coolblue.nl/vacatures/talent-sourcer"
           },
           {
-            "title": "Recruiter CoolblueBezorgt Almere",
-            "url": "https://www.coolblue.nl/vacatures/kantoor?srsltid=AfmBOopAOE8IuD5qbt-EyG1K-cEG5AO2RHzc7u3vCCHQpg4ZXY75ivGD"
+            "title": "Recruiter",
+            "url": null
           }
         ],
         "matching_roles": [
+          {
+            "job_title": "Recruiter",
+            "target_role": "Recruiter",
+            "match_strength": "exact",
+            "score": 1,
+            "url": null
+          },
           {
             "job_title": "Talent Sourcer",
             "target_role": "Talent Partner",
             "match_strength": "partial",
             "score": 0.5571428571428572,
-            "url": "https://www.coolblue.nl/vacatures/talent-sourcer?srsltid=AfmBOoqBBIZJjSi1DvgnrGIs4eiI42bSJDz26m2H1AENgSI-Z_GJ2DTq"
+            "url": "https://www.coolblue.nl/vacatures/talent-sourcer"
           }
         ],
-        "checkedAt": "2026-05-04T20:08:41.849Z"
+        "checkedAt": "2026-05-04T20:12:55.233Z"
       }
     },
     {
@@ -490,7 +497,7 @@
       "sector": "Consumer brands / FMCG",
       "size": "~50-200",
       "description": "Natural soap and home fragrance brand. Typically uses in-house recruiters/HR for growth, marketing, and supply chain roles.",
-      "careers_url": null,
+      "careers_url": "https://marcelsgreensoap.com/en/pages/work-with-us",
       "website": "https://www.marcelsgreenssoap.com/",
       "likely_hiring": true,
       "reasoning": "Seed company; consumer brand likely to maintain internal HR/recruitment.",
@@ -512,7 +519,7 @@
       "sector": "Municipality / Utilities (Water)",
       "size": "~500-1000",
       "description": "Water company serving the province of North Holland. Large enough to run internal recruitment and HR/Talent Acquisition teams.",
-      "careers_url": null,
+      "careers_url": "https://werkenbij.pwn.nl/vacatures",
       "website": "https://www.pwn.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; utility with structured HR and recurring hiring.",
@@ -534,7 +541,7 @@
       "sector": "Healthcare / Social care",
       "size": "~1000-5000",
       "description": "Care organization in the Haarlem region. Typically employs internal recruiters/HR for clinical and support staffing.",
-      "careers_url": null,
+      "careers_url": "https://www.werkenbijkennemerhart.nl/vacatures",
       "website": "https://www.kennemerhart.nl/",
       "likely_hiring": true,
       "reasoning": "Seed company; large healthcare employer with ongoing recruitment.",
@@ -1355,5 +1362,5 @@
       "vacancies": null
     }
   ],
-  "lastUpdated": "2026-05-04T20:11:51.344Z"
+  "lastUpdated": "2026-05-04T20:12:55.233Z"
 }
