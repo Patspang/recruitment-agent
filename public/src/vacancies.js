@@ -45,11 +45,17 @@ class VacancyChecker {
       const jobTitles = jobs.map(j => j.title);
       const matches = this.matchRolesToJobs(jobTitles, targetRoles);
 
-      // Attach direct URLs to matches
+      // Attach direct URLs to matches (only if they point to a specific posting)
       const jobUrlMap = new Map(jobs.map(j => [j.title.toLowerCase(), j.url]));
       matches.forEach(m => {
-        m.url = jobUrlMap.get(m.job_title.toLowerCase()) || null;
+        const url = jobUrlMap.get(m.job_title.toLowerCase()) || null;
+        m.url = url && this.isSpecificJobUrl(url) ? url : null;
       });
+
+      // Validate that linked job postings are still active
+      if (tavilySearch.hasApiKey()) {
+        await this.validateMatchUrls(matches);
+      }
 
       return {
         company_name: company.name,
@@ -127,7 +133,12 @@ class VacancyChecker {
 Search results:
 ${searchSnippets}
 
-Return ONLY a JSON array. Each item: {"title":"exact job title","url":"direct link to that posting or null"}
+IMPORTANT rules:
+1. SKIP any listing that appears expired or closed (e.g. "no longer accepting applications", "vacature gesloten", "position filled", posted more than 6 months ago).
+2. Only include a "url" if it points to a SPECIFIC individual job posting (e.g. /vacatures/recruiter-coolblue, /jobs/talent-sourcer-12345).
+3. If the URL is a generic listings/overview page (e.g. /vacatures, /vacatures/kantoor, /careers, /jobs?category=hr), set "url" to null.
+
+Return ONLY a JSON array. Each item: {"title":"exact job title","url":"direct link to that specific posting or null"}
 If no relevant roles found, return [].`;
 
     try {
@@ -285,6 +296,92 @@ If unknown, return [].`;
     }
 
     return '';
+  }
+
+  /**
+   * Validate that matched job URLs are still active by fetching the page content.
+   * Removes URLs (sets to null) and marks expired matches.
+   */
+  async validateMatchUrls(matches) {
+    const urlsToCheck = matches.filter(m => m.url).map(m => m.url);
+    if (urlsToCheck.length === 0) return;
+
+    try {
+      const extracted = await tavilySearch.extract(urlsToCheck);
+      const contentMap = new Map(extracted.map(e => [e.url, e.raw_content]));
+
+      for (const match of matches) {
+        if (!match.url) continue;
+        const content = contentMap.get(match.url) || '';
+        if (content && this.isExpiredPosting(content)) {
+          console.log(`Expired posting filtered: ${match.job_title} (${match.url})`);
+          match.url = null;
+          match.expired = true;
+        }
+      }
+
+      // Remove expired matches entirely
+      const expiredIndices = [];
+      for (let i = matches.length - 1; i >= 0; i--) {
+        if (matches[i].expired) expiredIndices.push(i);
+      }
+      for (const i of expiredIndices) {
+        matches.splice(i, 1);
+      }
+    } catch (e) {
+      console.warn('URL validation failed, keeping matches as-is:', e.message);
+    }
+  }
+
+  /**
+   * Check if page content indicates the job posting is expired/closed
+   */
+  isExpiredPosting(content) {
+    const lower = content.toLowerCase();
+    const expiryPatterns = [
+      'no longer accepting applications',
+      'this job is no longer available',
+      'this job has expired',
+      'position has been filled',
+      'vacature is gesloten',
+      'vacature gesloten',
+      'vacature verlopen',
+      'vacature is niet meer beschikbaar',
+      'deze vacature is niet meer actief',
+      'niet meer beschikbaar',
+      'job has been closed',
+      'job is closed',
+      'this position is closed',
+      'this posting has expired',
+      'application deadline has passed',
+      'no longer available',
+      'this role has been filled',
+      'solliciteren is niet meer mogelijk',
+    ];
+    return expiryPatterns.some(pattern => lower.includes(pattern));
+  }
+
+  /**
+   * Check if a URL points to a specific job posting rather than a generic listing page
+   */
+  isSpecificJobUrl(url) {
+    try {
+      const path = new URL(url).pathname.replace(/\/+$/, '');
+      const segments = path.split('/').filter(Boolean);
+      // Generic listing pages typically end at a category level like /vacatures or /vacatures/kantoor
+      // Specific postings have a slug with the job title or a numeric ID
+      const genericEndings = /^\/(careers|jobs|vacatures|werken-bij|werkenbij|openings|positions)(\/?(kantoor|office|hr|it|tech|marketing|sales|all|overview))?$/i;
+      if (genericEndings.test(path)) return false;
+      // Must have at least 2 path segments (e.g. /vacatures/recruiter-coolblue)
+      // and the last segment should look like a job slug (contains letters, not just a category)
+      if (segments.length < 2) return false;
+      const lastSegment = segments[segments.length - 1];
+      // Category-only segments are short single words; job slugs are usually longer or hyphenated
+      if (lastSegment.length < 4 && !/\d/.test(lastSegment)) return false;
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   /**

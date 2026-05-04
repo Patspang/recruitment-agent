@@ -58,6 +58,33 @@ class TavilySearch {
   }
 
   /**
+   * Extract content from specific URLs via Tavily Extract API
+   * @param {string[]} urls - URLs to extract content from
+   * @returns {Array<{url: string, raw_content: string}>}
+   */
+  async extract(urls) {
+    const apiKey = this.getApiKey();
+    if (!apiKey) throw new Error('Tavily API key not configured');
+
+    const response = await fetch(`${this.baseUrl}/extract`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ api_key: apiKey, urls })
+    });
+
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(`Tavily Extract error ${response.status}: ${err.detail || response.statusText}`);
+    }
+
+    const data = await response.json();
+    return (data.results || []).map(r => ({
+      url: r.url || '',
+      raw_content: (r.raw_content || '').substring(0, 2000)
+    }));
+  }
+
+  /**
    * Search for a company's careers page
    * @param {string} companyName
    * @returns {{ careersUrl: string|null, website: string|null, snippet: string }}
